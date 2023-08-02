@@ -1,0 +1,42 @@
+:root {
+	--colorPrincipal: #80d6c9;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 65.5%; /* para que un 1rem sea igual a 10 pixeles */
+}
+
+*,
+*:before,
+l*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 1.6rem /* esto equivale a 16px */;
+	line-height: 2;
+	font-family: 'Noto Serif Vithkuqi', serif;
+}
+
+.color__contact {
+	color: var(--colorPrincipal);
+}
+
+.contenedor__redes {
+	width: 3rem;
+}
+.contenedor__redes {
+	cursor: pointer;
+	border-radius: 0.5rem;
+	font-size: 1.6rem;
+	color: var(--colorPrincipal);
+	border-color: var(--colorPrincipal);
+	border: 0.1rem solid var(--colorPrincipal);
+}
+
+@media (min-width: 768px) {
+	.contenedor__header {
+		width: 65rem;
+	}
+}
