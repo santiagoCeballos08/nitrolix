@@ -1,5 +1,8 @@
 :root {
 	--colorPrincipal: #80d6c9;
+	--colorSecundario: #fff;
+	--colorTercario: #000;
+	--colorPaleta1: #1ae6d3;
 }
 
 html {
@@ -39,4 +42,63 @@ body {
 	.contenedor__header {
 		width: 65rem;
 	}
+}
+
+/* icono logo */
+.icono__img {
+	max-width: 15rem;
+	object-fit: cover;
+	background-repeat: no-repeat;
+}
+
+.navegacion__boton__compra__mini {
+	background-color: var(--colorPaleta1);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.contenedor__banner {
+	background-color: var(--colorPrincipal);
+	width: 100%;
+}
+
+/* boton de compra */
+.boton__compra {
+	margin-top: 4rem;
+	column-gap: 0.5rem;
+	max-width: 155rem;
+	padding: 1.5rem;
+	background-color: var(--colorPaleta1);
+	border-radius: 0.5rem;
+	justify-content: center;
+	display: flex;
+	font-size: 1.8rem;
+	align-items: center;
+	box-shadow: 1px 2px 3px #414040;
+}
+
+/* imagen */
+.imagen__principal-transfrom {
+	object-fit: contain;
+	object-position: center;
+}
+
+@media (min-width: 768px) {
+	.banner__informacion {
+		max-width: 80%;
+	}
+
+	.imagen__principal-transfrom {
+		width: 45rem;
+		-moz-transform: rotate(15deg);
+		-o-transform: rotate(15deg);
+		-webkit-transform: rotate(15deg);
+		transform: rotate(15deg);
+	}
+}
+
+/* banner */
+.hero__contenedor__banner {
+	width: 100%;
 }
