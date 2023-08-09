@@ -38,7 +38,7 @@
 	</head>
 	<body>
 		<!-- HEADER -->
-		<header class="header">
+		<header class="header" id="home">
 			<!-- INICIO DE CONTACTOS -->
 			<div class="header__informacion bg-black text-white p-4 w-full md:flex md:justify-center md:content-center">
 				<div class="contenedor__header md:flex md:gap-x-8 md:justify-around">
@@ -75,8 +75,8 @@
 						</picture>
 					</div>
 					<div class="navegacion__rels__links flex md:gap-x-8 gap-y-8 items-center md:flex-row flex-col">
-						<a href="#" class="font-semibold">inicio</a>
-						<a href="#" class="font-semibold">caracteristicas</a>
+						<a href="#home" class="font-semibold">inicio</a>
+						<a href="#sobre_producto" class="font-semibold">caracteristicas</a>
 						<a href="#" class="font-semibold">presentacion</a>
 						<a href="#" class="font-semibold">catalogo</a>
 						<a href="#" class="font-semibold">contacto</a>
@@ -87,7 +87,7 @@
 		</header>
 		<!-- FIN DEL HEADER -->
 		<!-- COMIENZO DE BANNER -->
-		<section class="hero__contenedor__banner flex">
+		<section class="hero__contenedor__banner flex" id="banner">
 			<div class="contenedor__banner p-4 grid md:grid-cols-2 grid-rows-2 md:grid-rows-1">
 				<div class="banner__seccion__text flex flex-col justify-center md:ml-12">
 					<h1 class="banner__titulo text-7xl font-semibold mb-11 text-center md:text-left">
@@ -116,5 +116,33 @@
 			</div>
 		</section>
 		<!-- FIN DE BANNER -->
+		<!-- SECCION ELEMENTOS DE CALIDAD -->
+		<section class="hero__contenedor__calidad">
+			<p class="title__mini__seccion__calidad text-center font-semibold pt-5" id="sobre_producto">sobre el producto</p>
+			<div class="title__seccion__calidad mt-6">
+				<h2 class="titulo__calidad text-center text-6xl">nitrogeno de alta calidad a tu serviocio</h2>
+				<p class="info__calidad text-center mt-5">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat possimus corrupti fuga, illum fugit suscipit
+					quam magnam vitae nihil! Eligendi fuga harum hic ipsam eum, itaque quaerat debitis ad dolores.
+				</p>
+			</div>
+			<div class="contenedor__calidad__cualidades">
+				<div class="contenedor__card card__1">
+					<div class="icon__card"><span class="text-8xl material-symbols-outlined">handshake</span></div>
+					<div class="titulo__card font-bold text-4xl my-3">confiabilidad</div>
+					<div class="info__card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sunt!</div>
+				</div>
+				<div class="contenedor__card card__2">
+					<div class="icon__card"><span class="text-8xl material-symbols-outlined">group</span></div>
+					<div class="titulo__card font-bold text-4xl my-3">confiabilidad</div>
+					<div class="info__card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sunt!</div>
+				</div>
+				<div class="contenedor__card card__3">
+					<div class="icon__card"><span class="text-8xl material-symbols-outlined">verified_user</span></div>
+					<div class="titulo__card font-bold text-4xl my-3">confiabilidad</div>
+					<div class="info__card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sunt!</div>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>
