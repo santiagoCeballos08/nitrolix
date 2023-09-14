@@ -1,4 +1,6 @@
 :root {
+	--colorRedSocialFb: #3b5998;
+	--colorRedSocialWpp: #25d366;
 	--colorPrincipal: #80d6c9;
 	--colorSecundario: #fff;
 	--colorTercario: #1b1b1b;
@@ -38,6 +40,28 @@ body {
 	border: 0.1rem solid var(--colorPrincipal);
 }
 
+.contenedor__redes:hover {
+}
+
+/* contenedor redes ahora  con colores personalizados*/
+.red-fb:hover {
+	border-color: var(--colorSecundario);
+	background-color: var(--colorRedSocialFb);
+	color: var(--colorSecundario);
+}
+
+.red-ig:hover {
+	background: linear-gradient(to bottom, #e53d9a, #f06292);
+	color: var(--colorSecundario);
+	border-color: var(--colorSecundario);
+}
+
+.red-wpp:hover {
+	background-color: var(--colorRedSocialWpp);
+	color: var(--colorSecundario);
+	border-color: var(--colorSecundario);
+}
+
 @media (min-width: 768px) {
 	.contenedor__header {
 		width: 65rem;
@@ -59,8 +83,7 @@ body {
 }
 
 .contenedor__banner {
-	background-color: var(--colorPrincipal);
-	width: 100%;
+	width: 70%;
 }
 
 /* boton de compra */
@@ -100,6 +123,8 @@ body {
 
 /* banner */
 .hero__contenedor__banner {
+	justify-content: center;
+	background-color: var(--colorPrincipal);
 	width: 100%;
 }
 
@@ -158,4 +183,32 @@ body {
 
 .hero__contenedor__banner {
 	min-height: 90vh;
+}
+
+/* seccion caracteristicas */
+.contenedor__caracteristicas {
+	background-color: var(--colorPrincipal);
+}
+.title__mini__seccion__caracteristicas {
+	color: var(--colorTercario);
+}
+
+.contenedor__cards__hero {
+	width: 90%;
+}
+
+.card__head {
+	width: 100%;
+}
+
+.card {
+	padding: 2rem;
+	color: var(--colorSecundario);
+	background-color: var(--colorTercario);
+	width: 20rem;
+	border-radius: 1rem;
+}
+
+.contenedor__cards__image {
+	padding: 2rem 0rem;
 }
