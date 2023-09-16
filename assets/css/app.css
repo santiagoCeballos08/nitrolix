@@ -218,6 +218,8 @@ body {
 }
 
 .contenedor__cards__image {
+	display: flex;
+	justify-content: center;
 	padding: 2rem 0rem;
 }
 
@@ -311,7 +313,7 @@ input[type='email'] {
 	font-size: 3rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
 	.contenedor__footer__slider {
 		width: 50%;
 	}
