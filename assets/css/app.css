@@ -1,11 +1,15 @@
+/* ------------------------------------------------------------------------- variables principales de la aplicacion ------------------------------------------------------------------------- */
+
 :root {
 	--colorRedSocialFb: #3b5998;
 	--colorRedSocialWpp: #25d366;
 	--colorPrincipal: #80d6c9;
-	--colorSecundario: #fff;
+	--colorSecundario: #f7f6f6;
 	--colorTercario: #1b1b1b;
 	--colorPaleta1: #1ae6d3;
 }
+
+/* ------------------------------------------------------------------------- seccion de config globales ------------------------------------------------------------------------- */
 
 html {
 	box-sizing: border-box;
@@ -23,6 +27,8 @@ body {
 	line-height: 2;
 	font-family: 'Noto Serif Vithkuqi', serif;
 }
+
+/* ------------------------------------------------------------------------- diseño principal ------------------------------------------------------------------------- */
 
 .color__contact {
 	color: var(--colorPrincipal);
@@ -188,6 +194,7 @@ body {
 /* seccion caracteristicas */
 .contenedor__caracteristicas {
 	background-color: var(--colorPrincipal);
+	padding-bottom: 3rem;
 }
 .title__mini__seccion__caracteristicas {
 	color: var(--colorTercario);
@@ -205,10 +212,57 @@ body {
 	padding: 2rem;
 	color: var(--colorSecundario);
 	background-color: var(--colorTercario);
-	width: 20rem;
+	width: 30rem;
 	border-radius: 1rem;
+	height: 35rem;
 }
 
 .contenedor__cards__image {
 	padding: 2rem 0rem;
+}
+
+/* seccion seccion de email */
+.contenido__email__hero {
+	background-color: var(--colorSecundario);
+}
+
+input[type='text'],
+input[type='email'] {
+	height: 4rem;
+	margin-bottom: 2rem;
+	border-radius: 1rem;
+	width: 100%;
+	padding: 1rem;
+}
+
+.content__formu textarea {
+	width: 100%;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+.contact__hero {
+	min-width: 25%;
+}
+
+@media (min-width: 768px) {
+	.formulario__principal {
+		width: 90%;
+	}
+}
+
+.btn-enviar_form {
+	color: var(--colorTercario);
+	border-radius: 1rem;
+	background-color: var(--colorPrincipal) !important;
+	padding: 1rem;
+	width: 100%;
+	margin: 2rem 0 2rem 0;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.btn-enviar_form {
+		width: auto;
+	}
 }

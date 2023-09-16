@@ -168,16 +168,16 @@
 			<!-- seccion cards -->
 			<div class="contenedor__cards__seccion flex justify-center mt-6">
 				<div class="contenedor__cards__hero md:flex md:justify-center">
-					<div class="contenedor_cards flex flex-col items-center gap-y-3">
+					<div class="contenedor_cards justify-center flex flex-col items-center gap-y-5">
 						<div class="card flex flex flex-col card-1 items-center">
-							<div class="card__head md:flex">
+							<div class="card__head flex items-center">
 								<div class="card__icon">
 									<span class="material-symbols-outlined text-center text-7xl"> engineering </span>
 								</div>
-								<span class="card__titulo">Metalmecanica</span>
+								<span class="card__titulo font-bold">Metalmecanica</span>
 							</div>
 							<div class="card__body">
-								<div class="card__info text-center">
+								<div class="card__info">
 									El nitrógeno se utiliza en la cementación para acelerar la absorción de carbono en el metal tratado
 									durante el proceso de carburación (combinación del carbono y el hierro para producir el acero) para
 									dar más dureza al material.
@@ -185,14 +185,14 @@
 							</div>
 						</div>
 						<div class="card flex flex flex-col card-1 items-center">
-							<div class="card__head md:flex">
+							<div class="card__head flex items-center">
 								<div class="card__icon">
 									<span class="material-symbols-outlined text-center text-7xl"> compost </span>
 								</div>
-								<span class="card__titulo">Botánica</span>
+								<span class="card__titulo font-bold">Botánica</span>
 							</div>
 							<div class="card__body">
-								<div class="card__info text-center">
+								<div class="card__info">
 									Tanto en las plantas como en los seres humanos, el nitrógeno se usa para producir aminoácidos, que
 									producen las proteínas que construyen las células, y es uno de los componentes básicos del ADN.
 								</div>
@@ -205,16 +205,16 @@
 							<img class="animation-jump" src="../assets/image/banner_image.png" alt="imagen de nitrolix" />
 						</picture>
 					</div>
-					<div class="contenedor_cards flex flex-col items-center gap-y-3">
+					<div class="contenedor_cards flex flex-col items-center gap-y-5">
 						<div class="card flex flex flex-col card-1 items-center">
-							<div class="card__head md:flex">
+							<div class="card__head flex items-center">
 								<div class="card__icon">
 									<span class="material-symbols-outlined text-center text-7xl"> Vaccines </span>
 								</div>
-								<span class="card__titulo">Medicina</span>
+								<span class="card__titulo font-bold">Medicina</span>
 							</div>
 							<div class="card__body">
-								<div class="card__info text-center">
+								<div class="card__info">
 									Las aplicaciones de nitrógeno medicinal en el entorno sanitario son las siguientes: En la
 									criopreservación (Biobancos) para la conservación a largo plazo de líneas celulares, muestras de
 									tejido, células madre, sangre, componentes sanguíneos, otras células y otros fluidos corporales.
@@ -222,17 +222,16 @@
 							</div>
 						</div>
 						<div class="card flex flex flex-col card-1 items-center">
-							<div class="card__head md:flex">
+							<div class="card__head flex items-center">
 								<div class="card__icon">
 									<span class="material-symbols-outlined text-center text-7xl"> Dermatology </span>
 								</div>
-								<span class="card__titulo">Dermatología</span>
+								<span class="card__titulo font-bold">Dermatología</span>
 							</div>
 							<div class="card__body">
-								<div class="card__info text-center">
+								<div class="card__info">
 									Lo usamos para eliminar diferentes lesiones cutáneas como: queratosis actínicas, acrocordones,
-									verrugas, etc. El objetivo del tratamiento es congelar y eliminar las lesiones tratadas, respetando el
-									tejido sano de alrededor de las lesiones.
+									verrugas, etc. El objetivo del tratamiento es congelar y eliminar las lesiones tratadas.
 								</div>
 							</div>
 						</div>
@@ -243,5 +242,89 @@
 			</div>
 			<!-- fin de contendor padre hero -->
 		</section>
+		<!-- ------------------------------------------- SECCION ---------------------------------------------
+													envio de correo electronico
+			----------------------------------------------------------------------------------------- -->
+		<section class="contenido__email__hero flex justify-center">
+			<div class="contenedor__formulario w-11/12 md:w-3/6">
+				<div class="informacion">
+					<h6 class="font-bold title__mini__seccion__calidad" id="contacto">contacto</h6>
+					<h2 class="font-bold title text-5xl mb-11">Comunicate con nosotros</h2>
+					<p class="informaicon-text-comicacion">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur soluta necessitatibus, cumque
+						laborum autem quaerat est repudiandae aspernatur voluptate at obcaecati cum officiis. Quasi voluptas natus
+						expedita beatae qui.
+					</p>
+				</div>
+				<div class="seccion__envio__informacion mt-7 flex-col md:flex-row flex gap-x-12 justify-center">
+					<form class="formulario__principal" id="formularioPrincipal">
+						<div class="contenedor__informacion">
+							<!-- nombre del cliente -->
+							<div class="contenedor__nombre content__formu">
+								<div>
+									<label for="nombre font-bold">nombre *</label>
+								</div>
+								<input type="text" name="nombre" id="nombre" required />
+							</div>
+							<!-- correo del cliente -->
+							<div class="contenedor__correo content__formu">
+								<div>
+									<label for="correo_cliente font-bold">correo</label>
+								</div>
+								<input type="email" name="correo__cliente" id="correoCliente" required />
+							</div>
+							<div class="contenedor__mensaje content__formu">
+								<div>
+									<label for="mensaje_cliente font-bold">mensaje *</label>
+								</div>
+								<textarea
+									name="mensaje__cliente"
+									id="mensaje_cliente"
+									rows="10"
+									placeholder="enviame un mensaje :D"></textarea>
+							</div>
+						</div>
+						<div>
+							<input type="submit" class="btn-enviar_form" value="enviar mensaje" />
+						</div>
+					</form>
+					<div class="contact__hero">
+						<div class="contenedor__direccion mb-3">
+							<div class="head__direccion flex gap-x-3">
+								<span class="icon_in material-symbols-outlined">location_on</span>
+								<p class="font-bold">ubicación</p>
+							</div>
+							<div class="dir">
+								<p>----</p>
+							</div>
+						</div>
+						<!-- direccion email -->
+						<div class="contenedor__email mb-3">
+							<div class="head__email flex gap-x-3">
+								<span class="material-symbols-outlined">mail</span>
+								<p class="font-bold">dirección email</p>
+							</div>
+							<div class="dir">
+								<p>nitrolix01@gmail.com</p>
+							</div>
+						</div>
+						<!-- telefono celular -->
+						<div class="contenedor__email mb-3">
+							<div class="head__email flex gap-x-3">
+								<span class="material-symbols-outlined">call</span>
+								<p class="font-bold">numero telefoníco</p>
+							</div>
+							<a href="https://wa.me/573176130809?text=Quiero mas informacion">317-613-08-09</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ------------------------------------------- SECCION ---------------------------------------------
+													seccion footer
+			----------------------------------------------------------------------------------------- -->
+
+		<footer class="contenedor__footer"></footer>
 	</body>
 </html>
