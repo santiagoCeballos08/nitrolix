@@ -229,7 +229,6 @@ body {
 input[type='text'],
 input[type='email'] {
 	height: 4rem;
-	margin-bottom: 2rem;
 	border-radius: 1rem;
 	width: 100%;
 	padding: 1rem;
@@ -265,4 +264,75 @@ input[type='email'] {
 	.btn-enviar_form {
 		width: auto;
 	}
+}
+
+/* ------------------------------------------------------------------------- seccion de footer ------------------------------------------------------------------------- */
+.contenedor__footer {
+	padding: 3rem;
+	background-color: var(--colorTercario);
+	color: var(--colorSecundario);
+}
+
+.contenedor__footer__slider {
+	width: 90%;
+}
+.logo__footer {
+	border-radius: 10px;
+}
+
+/* seccion del suscription */
+.subs-cliente {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.boton__subs {
+	position: absolute;
+	height: 3.5rem;
+	right: 3%;
+	font-size: 1.2rem;
+	background-color: var(--colorPaleta1);
+	padding-left: 1rem;
+	padding-right: 1rem;
+	color: var(--colorTercario);
+	border-radius: 5rem 5rem 5rem 5rem;
+}
+
+.text__subs {
+	color: var(--colorTercario);
+	border-radius: 5rem !important;
+}
+
+.informacion__footer {
+	width: 100%;
+}
+
+.lista__redes__footer ul > li > a {
+	font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+	.contenedor__footer__slider {
+		width: 50%;
+	}
+
+	.informacion__footer {
+		width: 30%;
+	}
+
+	.subs-cliente {
+		width: 30rem;
+	}
+}
+
+.contenedor__copi {
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	color: var(--colorSecundario);
+	background-color: #1b1b1b;
+	border-top: 1px solid gray;
+}
+
+.contenedor__copi p > a {
+	color: var(--colorPrincipal);
 }

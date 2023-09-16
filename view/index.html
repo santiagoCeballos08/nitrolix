@@ -79,7 +79,11 @@
 					<div class="navegacion__icono">
 						<picture>
 							<source srcset="../assets/image/logoPrincipalTransparente.png" class="icono__img" type="image/png" />
-							<img src="../assets/image/logoPrincipalTransparente.png" alt="logo de litrolix" class="icono__img" />
+							<img
+								loading="lazy"
+								src="../assets/image/logoPrincipalTransparente.png"
+								alt="logo de litrolix"
+								class="icono__img" />
 						</picture>
 					</div>
 					<div class="navegacion__rels__links flex md:gap-x-8 gap-y-8 items-center md:flex-row flex-col">
@@ -116,6 +120,7 @@
 					<picture>
 						<source srcset="../assets/image/banner_image.png" class="imagen__principal-transfrom" />
 						<img
+							loading="lazy"
 							src="../assets/image/banner_image.png"
 							class="animation-jump imagen__principal-transfrom"
 							alt="nitrogeno liquido nitrolix" />
@@ -202,7 +207,11 @@
 					<div class="contenedor__cards__image">
 						<picture class="contenedor_image">
 							<source srcset="../assets/image/banner_image.png" />
-							<img class="animation-jump" src="../assets/image/banner_image.png" alt="imagen de nitrolix" />
+							<img
+								loading="lazy"
+								class="animation-jump"
+								src="../assets/image/banner_image.png"
+								alt="imagen de nitrolix" />
 						</picture>
 					</div>
 					<div class="contenedor_cards flex flex-col items-center gap-y-5">
@@ -325,6 +334,61 @@
 													seccion footer
 			----------------------------------------------------------------------------------------- -->
 
-		<footer class="contenedor__footer"></footer>
+		<footer class="contenedor__footer flex justify-center">
+			<div class="contenedor__footer__slider flex flex-col md:flex-row justify-around md:gap-x-2 gap-y-5">
+				<div class="flex flex-col items-center md:items-start informacion__footer">
+					<div class="footer__icon">
+						<img src="../assets/image/mini.svg.webp" alt="" loading="lazy" width="200px" class="logo__footer" />
+					</div>
+					<p class="text-center md:text-start">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis minima eos corrupti voluptates
+						optio rerum
+					</p>
+				</div>
+				<div class="contenedor__contacto__footer">
+					<div class="contenedor__links__footer">
+						<div class="subs-cliente">
+							<input type="email" placeholder="ingresa el correo" class="text__subs" id="subsText" />
+							<button class="boton__subs">Subscribe</button>
+						</div>
+						<div class="redes__sociales mt-3">
+							<p class="font-bold text-center md:text-start">Siguenos en</p>
+							<div class="lista__redes__footer flex justify-center items-center md:justify-start">
+								<ul class="flex gap-x-12">
+									<li>
+										<a href="" target="_blank">
+											<span class="icon__footer__redes"><i class="fa-brands fa-instagram redes"></i></span>
+										</a>
+									</li>
+									<li>
+										<a href="" target="_blank">
+											<span class="icon__footer__redes"><i class="fa-brands fa-facebook redes"></i></span>
+										</a>
+									</li>
+									<li>
+										<a href="" target="_blank">
+											<span class="icon__footer__redes"><i class="fa-brands fa-whatsapp redes"></i></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="contenedor__copi">
+			<div class="copy__text">
+				<p class="text-center">
+					&copy; <span id="year">---</span> Nitrolix. Todos los derechos reservados por
+					<a href="https://github.com/THEGLUM">santiago ceballos</a>
+				</p>
+			</div>
+		</div>
+
+		<!-- ------------------------------------------- SECCION ---------------------------------------------
+														scrips de aplicacion
+			----------------------------------------------------------------------------------------- -->
+		<script src="../assets/js/app.js"></script>
 	</body>
 </html>
