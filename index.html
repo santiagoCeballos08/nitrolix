@@ -13,12 +13,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- CSS -->
-		<link rel="preload" href="../assets/css/app.css" type="stylesheet" />
-		<link rel="stylesheet" href="../assets/css/app.css" />
-		<link rel="stylesheet" href="../assets/css/normalize.css" />
-		<link rel="stylesheet" href="../assets/css/icons/css/all.css" />
-		<link rel="stylesheet" href="../assets/css/animaciones.css" />
+		<link rel="preload" href="./assets/css/app.css" type="stylesheet" />
+		<link rel="stylesheet" href="./assets/css/app.css" />
+		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<link rel="stylesheet" href="./assets/css/icons/css/all.css" />
+		<link rel="stylesheet" href="./assets/css/animaciones.css" />
 		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- animate css -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 		<!-- FUENTE DE DISEÑO -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,16 +43,14 @@
 		<!-- HEADER -->
 		<header class="header" id="home" data-elemento="hola">
 			<!-- INICIO DE CONTACTOS -->
-			<div class="header__informacion bg-black text-white p-4 w-full lg:flex lg:justify-center lg:content-center">
+			<div class="header__informacion bg-black text-white p-4 w-full flex justify-center content-center">
 				<div class="contenedor__header lg:flex lg:gap-x-8 lg:justify-around">
 					<div class="contenedor__infro flex flex-col lg:flex-row lg:justify-center lg:gap-x-8">
 						<div class="informacion__tel flex justify-center pt-6 gap-x-2 lg:pt-2 text-lg">
-							<span class="material-symbols-rounded color__contact text-xl">call</span>
-							<span><span class="font-bold color__contact"> llamanos:</span> +57 317 6130809</span>
+							<span><span class="font-bold color__contact"> Llamanos:</span> +57 317 6130809</span>
 						</div>
 						<div class="informacion__email flex justify-center pt-2 lg:pt-2 gap-x-2 text-lg">
-							<span class="material-symbols-rounded color__contact text-xl">email</span>
-							<span><span class="font-bold color__contact">email:</span> Nitrolix01@gmail.com</span>
+							<span><span class="font-bold color__contact">Email:</span> Nitrolix01@gmail.com</span>
 						</div>
 					</div>
 					<div class="informacion__redes flex justify-center mt-5 lg:mt-0 lg:pt-0 gap-x-3 lg:items-center">
@@ -76,23 +77,27 @@
 			<!-- FIN DE CONTACTOS -->
 			<nav class="hero__contenedor__navegacion__principal flex justify-center p-3">
 				<div class="contendor__navegacion-grande flex flex-row flex-col lg:flex-row gap-x-8">
-					<div class="navegacion__icono">
+					<div class="navegacion__icono flex items-center lg:mb-0">
 						<picture>
-							<source srcset="../assets/image/logoPrincipalTransparente.png" class="icono__img" type="image/png" />
+							<source srcset="./assets/image/logoPrincipalTransparente.png" class="icono__img" type="image/png" />
 							<img
 								loading="lazy"
-								src="../assets/image/logoPrincipalTransparente.png"
+								src="./assets/image/logoPrincipalTransparente.png"
 								alt="logo de litrolix"
 								class="icono__img" />
 						</picture>
+
+						<a class="lg:hidden btn_menu__toggle"><span class="material-symbols-outlined btn_menu"> menu </span></a>
 					</div>
-					<div class="navegacion__rels__links flex lg:gap-x-8 gap-y-8 items-center lg:flex-row flex-col">
-						<a href="#home" class="font-semibold">inicio</a>
-						<a href="#sobre_producto" class="font-semibold">caracteristicas</a>
-						<a href="#" class="font-semibold">presentacion</a>
-						<a href="#" class="font-semibold">catalogo</a>
-						<a href="#" class="font-semibold">contacto</a>
-						<div class="navegacion__boton__compra__mini lg:ml-10 font-bold">comprar ahora</div>
+
+					<div class="hidden lg:block mt-7 contenedor__navegacion_links animate__animated animate__fadeIn">
+						<div class="navegacion__rels__links flex lg:gap-x-8 gap-y-8 items-center lg:flex-row flex-col">
+							<a href="#banner" class="font-semibold">inicio</a>
+							<a href="#sobre_producto" class="font-semibold">caracteristicas</a>
+							<a href="#contenedorCaracteristicas" class="font-semibold">presentacion</a>
+							<a href="#contacto" class="font-semibold">contacto</a>
+							<div class="navegacion__boton__compra__mini lg:ml-10 font-bold">comprar ahora</div>
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -103,7 +108,7 @@
 			<div class="contenedor__banner p-4 grid lg:grid-cols-2 grid-rows-2 lg:grid-rows-1">
 				<div class="banner__seccion__text flex flex-col justify-center">
 					<h1 class="banner__titulo text-7xl font-semibold mb-11 text-center lg:text-left">
-						nitrolix analisis & evolución
+						Nitrolix analisis & evolución
 					</h1>
 					<p class="banner__informacion text-center lg:text-left">
 						Estamos comprendiendo las nuevas tendencias de desarrollo en los diferentes sectores y buscamos brindar ese
@@ -111,17 +116,17 @@
 						las diferentes ramas Metalmecanica, Dermatologia, Centros de investigacion, Botanica , etc.
 					</p>
 					<div class="banner__boton__contenedor flex justify-center lg:justify-start">
-						<a href="" class="boton__compra font-semibold"
+						<a href="#contenedorCaracteristicas" class="boton__compra font-semibold"
 							>conocer mas <span class="material-symbols-outlined"> arrow_forward </span></a
 						>
 					</div>
 				</div>
 				<div class="banner__seccion__image flex justify-center">
 					<picture>
-						<source srcset="../assets/image/banner_image.png" class="imagen__principal-transfrom" />
+						<source srcset="./assets/image/banner_image.png" class="imagen__principal-transfrom" />
 						<img
 							loading="lazy"
-							src="../assets/image/banner_image.png"
+							src="./assets/image/banner_image.png"
 							class="animation-jump imagen__principal-transfrom"
 							alt="nitrogeno liquido nitrolix" />
 					</picture>
@@ -131,9 +136,9 @@
 		<!-- FIN DE BANNER -->
 		<!-- SECCION ELEMENTOS DE CALIDAD -->
 		<section class="hero__contenedor__calidad p-12">
-			<p class="title__mini__seccion__calidad text-center font-semibold pt-5" id="sobre_producto">sobre el producto</p>
+			<p class="title__mini__seccion__calidad text-center font-semibold pt-5" id="sobre_producto">Sobre el producto</p>
 			<div class="title__seccion__calidad mt-6">
-				<h2 class="titulo__calidad text-center text-6xl">nitrogeno de alta calidad a tu serviocio</h2>
+				<h2 class="titulo__calidad text-center text-6xl">Nitrogeno de alta calidad a tu servicio</h2>
 				<p class="info__calidad text-center mt-5 lg:max-w-6xl lg:pt-4">
 					Más allá del impacto en la mejora del producto, nos diferenciamos por el servicio y calidad humana; dando así
 					ese impulso evolutivo con nuestro asesoramiento
@@ -142,12 +147,12 @@
 			<div class="contenedor__calidad__cualidades">
 				<div class="contenedor__card card__1">
 					<div class="icon__card"><span class="text-8xl material-symbols-outlined">handshake</span></div>
-					<div class="titulo__card font-bold text-4xl my-3">Confiabilidad</div>
+					<div class="titulo__card font-bold text-4xl my-3">Compromiso</div>
 					<div class="info__card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sunt!</div>
 				</div>
 				<div class="contenedor__card card__2">
 					<div class="icon__card"><span class="text-8xl material-symbols-outlined">group</span></div>
-					<div class="titulo__card font-bold text-4xl my-3">Compromiso</div>
+					<div class="titulo__card font-bold text-4xl my-3">Garantia</div>
 					<div class="info__card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sunt!</div>
 				</div>
 				<div class="contenedor__card card__3">
@@ -159,10 +164,10 @@
 		</section>
 		<!-- FIN DE LA SECCION DE  CUALIDADES -->
 		<section class="contenedor__caracteristicas" id="contenedorCaracteristicas">
-			<div class="title__mini__seccion__caracteristicas text-center font-bold pt-5">caracteristicas</div>
+			<div class="title__mini__seccion__caracteristicas text-center font-bold pt-5">Caracteristicas</div>
 			<div class="title__seccion__calidad mt-6">
 				<!--  -->
-				<h2 class="titulo__calidad text-center text-6xl">nitrogeno de alta calidad a tu serviocio</h2>
+				<h2 class="titulo__calidad text-center text-6xl">Nitrogeno de alta calidad a tu serviocio</h2>
 				<p class="info__calidad text-center mt-5">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum fugiat suscipit sunt laboriosam. Suscipit
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum fugiat suscipit sunt laboriosam. Suscipit
@@ -206,11 +211,11 @@
 					</div>
 					<div class="contenedor__cards__image">
 						<picture class="contenedor_image">
-							<source srcset="../assets/image/banner_image.png" />
+							<source srcset="./assets/image/banner_image.png" />
 							<img
 								loading="lazy"
 								class="animation-jump"
-								src="../assets/image/banner_image.png"
+								src="./assets/image/banner_image.png"
 								alt="imagen de nitrolix" />
 						</picture>
 					</div>
@@ -287,6 +292,7 @@
 									<label for="mensaje_cliente font-bold">mensaje *</label>
 								</div>
 								<textarea
+									required
 									name="mensaje__cliente"
 									id="mensaje_cliente"
 									rows="10"
@@ -338,12 +344,11 @@
 			<div class="contenedor__footer__slider flex flex-col lg:flex-row justify-around lg:gap-x-2 gap-y-5">
 				<div class="flex flex-col items-center lg:items-start informacion__footer">
 					<div class="footer__icon">
-						<img src="../assets/image/mini.svg.webp" alt="" loading="lazy" width="200px" class="logo__footer" />
+						<a href="./index.html">
+							<img src="./assets/image/mini.svg.webp" alt="" loading="lazy" width="200px" class="logo__footer" />
+						</a>
 					</div>
-					<p class="text-center lg:text-start">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis minima eos corrupti voluptates
-						optio rerum
-					</p>
+					<p class="text-center lg:text-start"></p>
 				</div>
 				<div class="contenedor__contacto__footer">
 					<div class="contenedor__links__footer">
@@ -389,6 +394,6 @@
 		<!-- ------------------------------------------- SECCION ---------------------------------------------
 														scrips de aplicacion
 			----------------------------------------------------------------------------------------- -->
-		<script src="../assets/js/app.js"></script>
+		<script src="./assets/js/app.js"></script>
 	</body>
 </html>

@@ -46,9 +46,6 @@ body {
 	border: 0.1rem solid var(--colorPrincipal);
 }
 
-.contenedor__redes:hover {
-}
-
 /* contenedor redes ahora  con colores personalizados*/
 .red-fb:hover {
 	border-color: var(--colorSecundario);
@@ -89,7 +86,7 @@ body {
 }
 
 .contenedor__banner {
-	width: 70%;
+	width: 75%;
 }
 
 /* boton de compra */
@@ -337,4 +334,22 @@ input[type='email'] {
 
 .contenedor__copi p > a {
 	color: var(--colorPrincipal);
+}
+
+.btn_menu {
+	background-color: var(--colorPrincipal);
+	padding: 0.5rem;
+	border-radius: 0.4rem;
+}
+
+.navegacion__icono {
+	column-gap: 35vw;
+	justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+	.navegacion__icono {
+		width: auto;
+		justify-content: center;
+	}
 }
