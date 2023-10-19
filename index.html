@@ -9,6 +9,8 @@
 		<meta name="copyright" content="Nitrolix" />
 		<meta name="classification" content="Business" />
 
+		<link rel="icon" href="./assets/image/favicon.png" type="image/png" />
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -40,6 +42,20 @@
 		<title>Nitrolix</title>
 	</head>
 	<body>
+		<!-- ------------------------------------------- SECCION ---------------------------------------------
+														splah de la aplicacion
+			----------------------------------------------------------------------------------------- -->
+		<div class="content__splash__hero">
+			<div class="content__splash">
+				<div class="content__img">
+					<img
+						src="./assets/image/logo_principal.png"
+						class="image__nitro__splash splash-animate-nitrolix"
+						id="img_splash"
+						alt="imgen nitrolix" />
+				</div>
+			</div>
+		</div>
 		<!-- HEADER -->
 		<header class="header" id="home" data-elemento="hola">
 			<!-- INICIO DE CONTACTOS -->
@@ -92,11 +108,16 @@
 
 					<div class="hidden lg:block mt-7 contenedor__navegacion_links animate__animated animate__fadeIn">
 						<div class="navegacion__rels__links flex lg:gap-x-8 gap-y-8 items-center lg:flex-row flex-col">
-							<a href="#banner" class="font-semibold">inicio</a>
-							<a href="#sobre_producto" class="font-semibold">caracteristicas</a>
-							<a href="#contenedorCaracteristicas" class="font-semibold">presentacion</a>
-							<a href="#contacto" class="font-semibold">contacto</a>
-							<div class="navegacion__boton__compra__mini lg:ml-10 font-bold">comprar ahora</div>
+							<a href="#banner" class="font-semibold">Inicio</a>
+							<a href="#sobre_producto" class="font-semibold">Producto</a>
+							<a href="#contenedorCaracteristicas" class="font-semibold">Característica</a>
+							<a href="#contacto" class="font-semibold">Contacto</a>
+							<a
+								href="https://wa.me/573176130809?text=Quiero mas informacion"
+								target="_blank"
+								class="navegacion__boton__compra__mini lg:ml-10 font-bold"
+								>Comprar ahora</a
+							>
 						</div>
 					</div>
 				</div>
@@ -181,7 +202,7 @@
 								<div class="card__info">
 									El nitrógeno se utiliza en la cementación para acelerar la absorción de carbono en el metal tratado
 									durante el proceso de carburación (combinación del carbono y el hierro para producir el acero) para
-									dar más dureza al material.
+									dar más dureza al material
 								</div>
 							</div>
 						</div>
@@ -195,14 +216,14 @@
 							<div class="card__body">
 								<div class="card__info">
 									Tanto en las plantas como en los seres humanos, el nitrógeno se usa para producir aminoácidos, que
-									producen las proteínas que construyen las células, y es uno de los componentes básicos del ADN.
+									producen las proteínas que construyen las células, y es uno de los componentes básicos del ADN
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="contenedor__cards__image">
 						<picture class="contenedor_image">
-							<source srcset="./assets/image/banner_image.png" />
+							<source srcset="./assets/image/nitrogeno.png" />
 							<img
 								loading="lazy"
 								class="animation-jump"
@@ -222,7 +243,7 @@
 								<div class="card__info">
 									Las aplicaciones de nitrógeno medicinal en el entorno sanitario son las siguientes: En la
 									criopreservación (Biobancos) para la conservación a largo plazo de líneas celulares, muestras de
-									tejido, células madre, sangre, componentes sanguíneos, otras células y otros fluidos corporales.
+									tejido, células madre, sangre, componentes sanguíneos, otras células y otros fluidos corporales
 								</div>
 							</div>
 						</div>
@@ -236,7 +257,7 @@
 							<div class="card__body">
 								<div class="card__info">
 									Lo usamos para eliminar diferentes lesiones cutáneas como: queratosis actínicas, acrocordones,
-									verrugas, etc. El objetivo del tratamiento es congelar y eliminar las lesiones tratadas.
+									verrugas, etc. El objetivo del tratamiento es congelar y eliminar las lesiones tratadas
 								</div>
 							</div>
 						</div>
@@ -256,31 +277,39 @@
 					<h6 class="font-bold title__mini__seccion__calidad" id="contacto">contacto</h6>
 					<h2 class="font-bold title text-5xl mb-11">Comunicate con nosotros</h2>
 					<p class="informaicon-text-comicacion">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur soluta necessitatibus, cumque
-						laborum autem quaerat est repudiandae aspernatur voluptate at obcaecati cum officiis. Quasi voluptas natus
-						expedita beatae qui.
+						¿Tienes alguna pregunta o comentario? <br />
+						¿Quieres saber más sobre nuestros productos o servicios?, ¿Tienes alguna duda sobre tu pedido? ¿Quieres
+						compartir tu opinión con nosotros? No dudes en contactarnos. <br />
+						Estamos aquí para ayudarte. <br />
+						Nuestro equipo de atención al cliente está disponible para responder a tus preguntas y comentarios.
 					</p>
 				</div>
 				<div class="seccion__envio__informacion mt-7 flex-col lg:flex-row flex gap-x-12 justify-center">
 					<form class="formulario__principal" id="formularioPrincipal">
 						<div class="contenedor__informacion">
 							<!-- nombre del cliente -->
-							<div class="contenedor__nombre content__formu">
+							<div class="contenedor__nombre content__formu mb-4">
 								<div>
-									<label for="nombre font-bold">nombre *</label>
+									<label for="nombre" class="flex items-center mb-3 gap-x-2 font-bold"
+										><span class="material-symbols-outlined">person</span>Nombre *</label
+									>
 								</div>
-								<input type="text" name="nombre" id="nombre" required />
+								<input type="text" placeholder="jhon doe" name="nombre" id="nombre" required />
 							</div>
 							<!-- correo del cliente -->
-							<div class="contenedor__correo content__formu">
+							<div class="contenedor__correo content__formu mb-4">
 								<div>
-									<label for="correo_cliente font-bold">correo</label>
+									<label for="correo_cliente " class="flex items-center mb-3 gap-x-2 font-bold"
+										><span class="material-symbols-outlined">email</span>Correo*
+									</label>
 								</div>
-								<input type="email" name="correo__cliente" id="correoCliente" required />
+								<input type="email" placeholder="jhon@gmail.com" name="correo__cliente" id="correoCliente" required />
 							</div>
 							<div class="contenedor__mensaje content__formu">
 								<div>
-									<label for="mensaje_cliente font-bold">mensaje *</label>
+									<label for="mensaje_cliente" class="flex items-center font-bold gap-x-2 mb-3"
+										><span class="material-symbols-outlined">inbox</span>Mensaje *</label
+									>
 								</div>
 								<textarea
 									required
@@ -352,17 +381,17 @@
 							<div class="lista__redes__footer flex justify-center items-center lg:justify-start">
 								<ul class="flex gap-x-12">
 									<li>
-										<a href="" target="_blank">
+										<a href="https://www.facebook.com/nitrolix.2023?mibextid=ZbWKwL" target="_blank">
 											<span class="icon__footer__redes"><i class="fa-brands fa-instagram redes"></i></span>
 										</a>
 									</li>
 									<li>
-										<a href="" target="_blank">
+										<a href="https://instagram.com/nitrolix01?igshid=YTQwZjQ0NmI0OA==" target="_blank">
 											<span class="icon__footer__redes"><i class="fa-brands fa-facebook redes"></i></span>
 										</a>
 									</li>
 									<li>
-										<a href="" target="_blank">
+										<a href="https://wa.me/573176130809?text=Quiero mas informacion" target="_blank">
 											<span class="icon__footer__redes"><i class="fa-brands fa-whatsapp redes"></i></span>
 										</a>
 									</li>

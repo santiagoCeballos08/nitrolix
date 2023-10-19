@@ -31,3 +31,25 @@
 		top: 3px;
 	}
 }
+
+
+/* ------------------------------------- animacion splash-------------------------------------- */
+.splash-animate-nitrolix {
+
+	animation: 2s splash ease-out infinite;
+}
+
+@keyframes splash {
+
+	0% {
+		scale: 1;
+	}
+
+	50%{
+		scale: 2;
+	}
+
+	100% {
+		scale: 1;
+	}
+}
