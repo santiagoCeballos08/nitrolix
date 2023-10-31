@@ -3,10 +3,10 @@
 
 
 /* variables principales y credeciales */
-// $user = "u863260840_nitrolix"; // <- usuario
-// $pass = "5aj66,y&9,,BRU#zhY!"; // <- contraseña
-$user = "root"; // <- usuario
-$pass = ""; // <- contraseña
+$user = "u863260840_nitrolix"; // <- usuario
+$pass = "5aj66,y&9,,BRU#zhY!"; // <- contraseña
+// $user = "root"; // <- usuario
+// $pass = ""; // <- contraseña
 $bd = "u863260840_nitrolix_bd"; // <- base de datos
 $host = "localhost"; // <- host de la pagina web
 $dns_nitrolix = "mysql:host=$host;dbname=$bd";

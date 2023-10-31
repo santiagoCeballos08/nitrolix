@@ -6,13 +6,10 @@ sea de clientes o sea de la misma empresa nitrolix */
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../lib/PHPMailer/src/Exception.php';
-require '../lib/PHPMailer/src/PHPMailer.php';
-require '../lib/PHPMailer/src/SMTP.php';
-
 /*---------------------------------------------------------------------------------
 								variables globales
 ----------------------------------------------------------------------------------*/
+
 $indicativo = trim($_POST['indicativo']);
 $respuesta = '';
 
@@ -42,10 +39,54 @@ function guardarCliente()
 		return ['status' => 'error', 'msg' => $e->getMessage(), 'data' => 0];
 	}
 
-
+	$data_email = envioEmail($mensaje, $nombre, $email);
 	return ['status' => 'success', 'msg' => 'se envio mensaje', 'data' => 1];
 }
 
+function envioEmail($mensaje = '', $nombre = '', $email = '')
+{
+	//importamos los archivos para el envio del correo
+	require "../lib/PHPMailer/src/Exception.php";
+	require "../lib/PHPMailer/src/PHPMailer.php";
+	require "../lib/PHPMailer/src/SMTP.php";
+
+	// preparamos el envio de mensaje mensaje de correo
+	//credenciales del correo electronico
+	$hostname = 'smtp.gmail.com';
+	$username = 'almacensantiago.24@gmail.com';
+	$password = 'sgqr appg lmao jqhr';
+	$mail = new PHPMailer();
+	try {
+
+		$mail->SMTPDebug = 0;
+		$mail->isSMTP();
+		$mail->Host = $hostname;
+		$mail->SMTPAuth = true;
+		$mail->Username = $username;
+		$mail->Password = $password;
+		$mail->SMTPSecure = 'tls';
+		$mail->Port = 587;
+
+		$mail->setFrom($username, 'mensaje de contacto web');
+		$mail->addAddress("sceballos180@gmail.com");
+		$mail->isHTML(true);
+		$mail->CharSet = 'UTF-8';
+		$mail->Subject = "Contacto Nitrolix canal web";
+		$mail->Body = "<p>
+		Hola me llamo $nombre, mi correo es $email
+		mensaje: $mensaje
+		</p>";
+
+
+		if ($mail->send()) {
+			return ["status" => "success", "msg" => 'correo enviado'];
+		} else {
+			return ["status" => "error", "msg" => $mail->ErrorInfo];
+		}
+	} catch (Exception $error) {
+		return 'error en el envio del correo: ' . $error->getMessage();
+	}
+}
 /*---------------------------------------------------------------------------------
 								indicativos
 ----------------------------------------------------------------------------------*/
