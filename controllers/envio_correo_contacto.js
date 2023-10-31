@@ -36,7 +36,7 @@ async function enviarMensajeContacto(formulario) {
 		return;
 	}
 
-	if (expresion.test(formularioPrincipal.correo__cliente.value)) {
+	if (!expresion.test(formularioPrincipal.correo__cliente.value)) {
 		return;
 	}
 
