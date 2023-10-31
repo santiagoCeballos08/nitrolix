@@ -22,7 +22,8 @@ async function enviarMensajeContacto(formulario) {
 	let peticion = '';
 	let respuesta = '';
 	let datos = new FormData(formularioPrincipal);
-
+	let expresion =
+		/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
 	//validamos los datos que no esten vacios
 	if (formularioPrincipal.nombre.value === '') {
 		return;
@@ -32,6 +33,10 @@ async function enviarMensajeContacto(formulario) {
 	}
 
 	if (formularioPrincipal.mensaje__cliente.value === '') {
+		return;
+	}
+
+	if (expresion.test(formularioPrincipal.correo__cliente.value)) {
 		return;
 	}
 
@@ -46,6 +51,10 @@ async function enviarMensajeContacto(formulario) {
 		console.log(error);
 	}
 
-	respuesta = await peticion.json();
-	console.log(respuesta);
+	try {
+		respuesta = await peticion.json();
+	} catch (error) {
+		console.log('error');
+	}
+	formularioPrincipal.reset();
 }

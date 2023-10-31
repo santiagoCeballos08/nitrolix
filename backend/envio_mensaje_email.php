@@ -68,7 +68,7 @@ function envioEmail($mensaje = '', $nombre = '', $email = '')
 		$mail->Port = 587;
 
 		$mail->setFrom($username, 'mensaje de contacto web');
-		$mail->addAddress("sceballos180@gmail.com");
+		$mail->addAddress("nitrolix01@gmail.com", "Nitrolix");
 		$mail->isHTML(true);
 		$mail->CharSet = 'UTF-8';
 		$mail->Subject = "Contacto Nitrolix canal web";
