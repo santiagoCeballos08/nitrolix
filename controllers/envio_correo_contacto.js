@@ -4,6 +4,7 @@
 ----------------------------------------------------------------------------------*/
 const formularioContactanos = document.querySelector('#formularioPrincipal');
 const URL_PRINCIPAL = './backend/envio_mensaje_email.php';
+const botonEnviar = document.querySelector('#btn-enviar_form');
 /*---------------------------------------------------------------------------------
 								funciones globales
 ----------------------------------------------------------------------------------*/
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function enviarMensajeContacto(formulario) {
 	formulario.preventDefault();
+	botonEnviar.disabled = true;
 	let formularioPrincipal = formulario.target;
 
 	/* datos para enviar el fetch */
@@ -56,5 +58,7 @@ async function enviarMensajeContacto(formulario) {
 	} catch (error) {
 		console.log('error');
 	}
+
 	formularioPrincipal.reset();
+	botonEnviar.disabled = false;
 }
