@@ -2,6 +2,7 @@
 
 /* NOTA: esta es la parte del backend de la pagina web para enviar mensajes por correo electronico
 sea de clientes o sea de la misma empresa nitrolix */
+require '../lib/vairables_entorno.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -12,6 +13,9 @@ use PHPMailer\PHPMailer\Exception;
 
 $indicativo = trim($_POST['indicativo']);
 $respuesta = '';
+$envCorreo = getenv('CorreoConf');
+$envPass = getenv('contrasena');
+$correoFinal = getenv('correoPrincipal');
 
 /*---------------------------------------------------------------------------------
 								Funciones globales
@@ -49,12 +53,13 @@ function envioEmail($mensaje = '', $nombre = '', $email = '')
 	require "../lib/PHPMailer/src/Exception.php";
 	require "../lib/PHPMailer/src/PHPMailer.php";
 	require "../lib/PHPMailer/src/SMTP.php";
+	global $envCorreo, $envPass, $correoFinal;
 
 	// preparamos el envio de mensaje mensaje de correo
 	//credenciales del correo electronico
 	$hostname = 'smtp.gmail.com';
-	$username = 'almacensantiago.24@gmail.com';
-	$password = 'sgqr appg lmao jqhr';
+	$username = $envCorreo;
+	$password = $envPass;
 	$mail = new PHPMailer();
 	try {
 
@@ -68,7 +73,7 @@ function envioEmail($mensaje = '', $nombre = '', $email = '')
 		$mail->Port = 587;
 
 		$mail->setFrom($username, 'mensaje de contacto web');
-		$mail->addAddress("nitrolix01@gmail.com", "Nitrolix");
+		$mail->addAddress($correoFinal, "Nitrolix");
 		$mail->isHTML(true);
 		$mail->CharSet = 'UTF-8';
 		$mail->Subject = "Contacto Nitrolix canal web";
