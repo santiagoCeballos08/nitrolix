@@ -1,13 +1,14 @@
 <?php
 /* NOTA: conexion a la base de datos de nitrolix porfavor tener mucho cuidado con este archivo */
-
+require '../lib/vairables_entorno.php';
+$envPass = getenv('pass');
+$envUser = getenv('user');
+$envDB = getenv('bd');
 
 /* variables principales y credeciales */
-$user = "u863260840_nitrolix"; // <- usuario
-$pass = "5aj66,y&9,,BRU#zhY!"; // <- contraseña
-// $user = "root"; // <- usuario
-// $pass = ""; // <- contraseña
-$bd = "u863260840_nitrolix_bd"; // <- base de datos
+$user = $envUser; // <- usuario
+$pass = $envPass; // <- contraseña
+$bd = $envDB; // <- base de datos
 $host = "localhost"; // <- host de la pagina web
 $dns_nitrolix = "mysql:host=$host;dbname=$bd";
 
