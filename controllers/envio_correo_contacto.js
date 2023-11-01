@@ -4,7 +4,7 @@
 ----------------------------------------------------------------------------------*/
 const formularioContactanos = document.querySelector('#formularioPrincipal');
 const URL_PRINCIPAL = './backend/envio_mensaje_email.php';
-const botonEnviar = document.querySelector('#btn-enviar_form');
+const botonEnviar = document.querySelector('.btn-enviar_form');
 /*---------------------------------------------------------------------------------
 								funciones globales
 ----------------------------------------------------------------------------------*/
