@@ -1,12 +1,17 @@
 /* ------------------------------------------------------------------------- variables principales de la aplicacion ------------------------------------------------------------------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+
 :root {
 	--colorRedSocialFb: #3b5998;
 	--colorRedSocialWpp: #25d366;
-	--colorPrincipal: #1ae6d3;
+	--colorPrincipal: #14a8b6;
 	--colorSecundario: #f7f6f6;
 	--colorTercario: #1b1b1b;
-	--colorPaleta1: #1ae6d3;
+	--colorPaleta1: #14a8b6;
+
+	--fuenteTitle: 'Outfit', sans-serif;
+	--fuenteDefault: 'Quicksand', sans-serif;
 }
 
 /* ------------------------------------------------------------------------- seccion de config globales ------------------------------------------------------------------------- */
@@ -25,7 +30,14 @@ l*:after {
 body {
 	font-size: 1.6rem /* esto equivale a 16px */;
 	line-height: 2;
-	font-family: 'Noto Serif Vithkuqi', serif;
+	font-family: var(--fuenteDefault);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--fuenteTitle);
 }
 
 /* ------------------------------------------------------------------------- diseño principal ------------------------------------------------------------------------- */
@@ -263,6 +275,7 @@ input[type='email'] {
 	border-radius: 1rem;
 	background-color: var(--colorPrincipal) !important;
 	padding: 1rem;
+	font-weight: bold;
 	width: 100%;
 	margin: 2rem 0 2rem 0;
 	cursor: pointer;
@@ -371,14 +384,14 @@ input[type='email'] {
 	z-index: 100;
 }
 
-.content__splash{
+.content__splash {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 50%;
 }
 
-.content__img{
+.content__img {
 	width: 20rem;
 	height: auto;
 }
