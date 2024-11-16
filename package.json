@@ -1,0 +1,43 @@
+{
+	"name": "nitrolix.web",
+	"version": "1.0.0",
+	"description": "empresa de distrobucion de nitrogeno liquido, en la ciudad de medellin y en el area metropolitana",
+	"main": "index.js",
+	"directories": {
+		"lib": "lib"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/santiagoCeballos08/nitrolix.git"
+	},
+	"keywords": [
+		"nitrogeno",
+		"paginaweb",
+		"desarrolloweb"
+	],
+	"author": "santiao ceballos",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/santiagoCeballos08/nitrolix/issues"
+	},
+	"homepage": "https://github.com/santiagoCeballos08/nitrolix#readme",
+	"dependencies": {
+		"pinia": "^2.2.6",
+		"vue": "^3.5.13",
+		"vue-router": "^4.4.5"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^5.2.0",
+		"autoprefixer": "^10.4.20",
+		"dotenv": "^16.4.5",
+		"postcss": "^8.4.49",
+		"tailwindcss": "^3.4.15",
+		"vite": "^5.4.11"
+	}
+}
