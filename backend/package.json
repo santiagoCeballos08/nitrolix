@@ -1,0 +1,27 @@
+{
+  "name": "backendnitrolix",
+  "version": "1.0.0",
+  "description": "backend para conectar la logica de negocio con el front end",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagoCeballos08/nitrolix.git"
+  },
+  "author": "santiago ceballos deossa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiagoCeballos08/nitrolix/issues"
+  },
+  "homepage": "https://github.com/santiagoCeballos08/nitrolix#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4",
+    "nodemailer": "^6.9.16",
+    "sequelize": "^6.37.5"
+  }
+}
