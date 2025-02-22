@@ -7,13 +7,8 @@
 		<div class="contenedor__footer__slider flex flex-col lg:flex-row justify-around lg:gap-x-2 gap-y-5">
 			<div class="flex flex-col items-center lg:items-start informacion__footer">
 				<div class="footer__icon">
-					<a href="./index.html">
-						<img
-							src="./public/image/logo_principal.png"
-							alt=""
-							loading="lazy"
-							width="200px"
-							class="logo__footer" />
+					<a href="/">
+						<img src="/image/logo_principal.png" alt="" loading="lazy" width="200px" class="logo__footer" />
 					</a>
 				</div>
 				<p class="text-center lg:text-start"></p>

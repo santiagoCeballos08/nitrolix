@@ -38,10 +38,10 @@
 			<div class="contendor__navegacion-grande flex flex-col lg:flex-row gap-x-8">
 				<div class="navegacion__icono flex items-center lg:mb-0">
 					<picture>
-						<source srcset="./public/image/logo_principal.png" class="icono__img" type="image/png" />
+						<source srcset="../../../public/image/logo_principal.png" class="icono__img" type="image/png" />
 						<img
 							loading="lazy"
-							src="./public/image/logo_principal.png.png"
+							src="../../../public/image/logo_principal.png"
 							alt="logo de litrolix"
 							class="icono__img" />
 					</picture>

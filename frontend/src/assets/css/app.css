@@ -4,7 +4,11 @@
 
 /* ------------------------------------------------------------------------- variables principales de la aplicacion ------------------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap'); */
+
+/* importamos los estilos definidos */
+@import url(./animaciones.css);
+@import url(./normalize.css);
 
 :root {
 	--colorRedSocialFb: #3b5998;
