@@ -1,7 +1,9 @@
 {
 	"compilerOptions": {
-		"target": "ES6",
-		"module": "ES6"
+		"paths": {
+			"@/*": ["./src/*"]
+		}
 	},
-	"include": ["src/**/*"]
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
 }
