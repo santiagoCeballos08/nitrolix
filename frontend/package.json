@@ -28,6 +28,7 @@
 	},
 	"homepage": "https://github.com/santiagoCeballos08/nitrolix#readme",
 	"dependencies": {
+		"@formkit/tempo": "^0.1.2",
 		"pinia": "^2.2.6",
 		"swiper": "^11.1.15",
 		"vue": "^3.5.13",

@@ -6,10 +6,7 @@
 		<div class="content__splash__hero" v-if="splash">
 			<div class="content__splash">
 				<div class="content__img">
-					<img
-						src="/image/logo_principal.png"
-						class="image__nitro__splash splash-animate-nitrolix"
-						alt="imgen nitrolix" />
+					<img src="/image/logo_principal.png" :class="outAnimate" alt="imgen nitrolix" />
 				</div>
 			</div>
 		</div>
@@ -47,12 +44,15 @@
 	import { onMounted, ref } from 'vue';
 
 	const splash = ref(true);
-
+	let outAnimate = ref('image__nitro__splash splash-animate-nitrolix');
+	// creamos el splash
 	onMounted(() => {
-		// cargamos la splah si no
 		window.onload = function () {
 			setTimeout(() => {
-				splash.value = false;
+				outAnimate.value = 'animate__animated animate__bounceOutUp';
+				setTimeout(() => {
+					splash.value = false;
+				}, 1000);
 			}, 2000);
 		};
 	});

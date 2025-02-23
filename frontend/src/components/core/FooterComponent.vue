@@ -58,13 +58,22 @@
 	<div class="contenedor__copi">
 		<div class="copy__text">
 			<p class="text-center">
-				&copy; <span id="year"></span> Nitrolix. Todos los derechos reservados por Nitrolix - desarrollado por
+				&copy; <span> {{ year }}</span> Nitrolix. Todos los derechos reservados por Nitrolix - desarrollado por
 				<a href="https://github.com/THEGLUM">santiago ceballos</a>
 			</p>
 		</div>
 	</div>
 </template>
 
-<script></script>
+<script setup>
+	import { format } from '@formkit/tempo';
+	import { onMounted, ref } from 'vue';
+
+	const year = ref(0);
+	const data = ref(new Date());
+	onMounted(() => {
+		year.value = format(data.value, 'YYYY', 'en');
+	});
+</script>
 
 <style lang="scss" scoped></style>
