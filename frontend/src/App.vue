@@ -1,16 +1,5 @@
 <template>
 	<div>
-		<!-- ------------------------------------------- SECCION ---------------------------------------------
-														splah de la aplicacion
-			----------------------------------------------------------------------------------------- -->
-		<div class="content__splash__hero" v-if="splash">
-			<div class="content__splash">
-				<div class="content__img">
-					<img src="/image/logo_principal.png" :class="outAnimate" alt="imgen nitrolix" />
-				</div>
-			</div>
-		</div>
-
 		<header-component />
 		<!-- FIN DEL HEADER -->
 		<!-- COMIENZO DE BANNER -->
@@ -42,20 +31,6 @@
 	import CalidadProductoHome from './components/Home/CalidadProductoHome.vue';
 	import BannerHome from './components/Home/BannerHome.vue';
 	import { onMounted, ref } from 'vue';
-
-	const splash = ref(true);
-	let outAnimate = ref('image__nitro__splash splash-animate-nitrolix');
-	// creamos el splash
-	onMounted(() => {
-		window.onload = function () {
-			setTimeout(() => {
-				outAnimate.value = 'animate__animated animate__bounceOutUp';
-				setTimeout(() => {
-					splash.value = false;
-				}, 1000);
-			}, 2000);
-		};
-	});
 </script>
 
 <style lang="scss" scoped></style>
