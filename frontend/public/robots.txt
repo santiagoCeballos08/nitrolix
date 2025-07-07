@@ -1,19 +1,17 @@
-# User-agent: Directiva para especificar a qué robots de búsqueda se aplica la regla.
+
 # El asterisco (*) significa "a todos los robots".
+
 User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Allow: /
 
-# Disallow: Directiva para especificar los directorios o archivos que NO deben ser rastreados.
-# Aquí estamos bloqueando algunas rutas comunes que no suelen ser relevantes para SEO o son de administración.
-
-Disallow: /cgi-bin/    # Archivos CGI comunes
-Disallow: /temp/       # Directorios temporales
-Disallow: /private/    # Si tuvieras un directorio con información privada
 
 # Allow: Directiva para permitir explícitamente el rastreo de subdirectorios
 # dentro de un directorio que fue previamente "Disallow" (menos común, pero útil).
 # Ejemplo: si bloqueas /wp-admin/ pero necesitas permitir /wp-admin/admin-ajax.php
 # Allow: /wp-admin/admin-ajax.php
 
-# Sitemap: Directiva para indicarle a los motores de búsqueda dónde encontrar tu sitemap XML.
-# Esto es CRUCIAL para ayudar a Google a descubrir todas tus páginas importantes de Nitrógeno Express.
-Sitemap: /sitemap.xml
+Sitemap: https://www.nitrolix.com/sitemap.xml
