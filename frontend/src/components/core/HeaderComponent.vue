@@ -16,18 +16,21 @@
 					<a
 						href="https://instagram.com/nitrolix01?igshid=YTQwZjQ0NmI0OA=="
 						target="_blanc"
-						class="contenedor__redes red-ig p-2 redes flex justify-center">
+						class="contenedor__redes red-ig p-2 redes flex justify-center"
+						aria-label="redes sociales de instagram">
 						<i class="fa-brands fa-instagram redes"></i>
 					</a>
 					<a
 						href="https://www.facebook.com/profile.php?id=61552800174349&mibextid=9R9pXO"
 						target="_blanc"
-						class="contenedor__redes red-fb p-2 redes flex justify-center justify-items-center">
+						class="contenedor__redes red-fb p-2 redes flex justify-center justify-items-center"
+						aria-label="redes sociales de facebook">
 						<i class="fa-brands fa-facebook redes"></i>
 					</a>
 					<a
 						href="https://wa.me/3026465782?text=Quiero mas informacion"
-						class="contenedor__redes p-2 red-wpp redes flex justify-center">
+						class="contenedor__redes p-2 red-wpp redes flex justify-center"
+						aria-label="redes sociales de whatsapp">
 						<i class="fa-brands fa-whatsapp redes"></i>
 					</a>
 				</div>
@@ -39,29 +42,19 @@
 				<div class="navegacion__icono flex items-center lg:mb-0">
 					<picture>
 						<source srcset="../../../public/image/logo_principal.png" class="icono__img" type="image/png" />
-						<img
-							loading="lazy"
-							src="../../../public/image/logo_principal.png"
-							alt="logo de litrolix"
-							class="icono__img" />
+						<img loading="lazy" src="../../../public/image/logo_principal.png" alt="logo de litrolix" class="icono__img" />
 					</picture>
 
-					<a class="lg:hidden btn_menu__toggle"
-						><span class="material-symbols-outlined btn_menu"> menu </span></a
-					>
+					<a class="lg:hidden btn_menu__toggle"><span class="material-symbols-outlined btn_menu"> menu </span></a>
 				</div>
 
-				<div
-					class="hidden lg:block mt-7 md:mt-0 contenedor__navegacion_links animate__animated animate__fadeIn">
+				<div class="hidden lg:block mt-7 md:mt-0 contenedor__navegacion_links animate__animated animate__fadeIn">
 					<div class="navegacion__rels__links flex lg:gap-x-8 gap-y-8 items-center lg:flex-row flex-col">
 						<a href="#banner" class="font-semibold">Inicio</a>
 						<a href="#sobre_producto" class="font-semibold">Producto</a>
 						<a href="#contenedorCaracteristicas" class="font-semibold">Característica</a>
 						<a href="#contacto" class="font-semibold">Contacto</a>
-						<a
-							href="https://wa.me/3026465782?text=Quiero mas informacion"
-							target="_blank"
-							class="navegacion__boton__compra__mini lg:ml-10 font-bold">
+						<a href="https://wa.me/3026465782?text=Quiero mas informacion" target="_blank" class="navegacion__boton__compra__mini lg:ml-10 font-bold">
 							Comprar ahora
 						</a>
 					</div>

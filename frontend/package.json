@@ -1,8 +1,9 @@
 {
 	"name": "nitrolix.web",
 	"version": "1.0.0",
-	"description": "empresa de distrobucion de nitrogeno liquido, en la ciudad de medellin y en el area metropolitana",
+	"description": "Somos una empresa dedicada a la distribución de nitrógeno líquido en Medellín y su área metropolitana",
 	"main": "index.js",
+	"type": "module",
 	"directories": {
 		"lib": "lib"
 	},
@@ -29,17 +30,19 @@
 	"homepage": "https://github.com/santiagoCeballos08/nitrolix#readme",
 	"dependencies": {
 		"@formkit/tempo": "^0.1.2",
-		"pinia": "^2.2.6",
+		"@tailwindcss/vite": "^4.1.8",
+		"@vitejs/plugin-vue": "^5.2.4",
+		"gsap": "^3.13.0",
+		"pinia": "^3.0.3",
 		"swiper": "^11.1.15",
+		"tailwindcss": "^4.1.8",
 		"vue": "^3.5.13",
 		"vue-router": "^4.4.5"
 	},
 	"devDependencies": {
-		"@vitejs/plugin-vue": "^5.2.0",
 		"autoprefixer": "^10.4.20",
 		"dotenv": "^16.4.5",
 		"postcss": "^8.4.49",
-		"tailwindcss": "^3.4.15",
-		"vite": "^5.4.11"
+		"vite": "^6.3.5"
 	}
 }

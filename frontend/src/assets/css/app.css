@@ -1,25 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+/* ------------------------------------------------------------------------- fuente principal ------------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------------------- variables principales de la aplicacion ------------------------------------------------------------------------- */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap'); */
-
-/* importamos los estilos definidos */
-@import url(./animaciones.css);
-@import url(./normalize.css);
 
 :root {
 	--colorRedSocialFb: #3b5998;
 	--colorRedSocialWpp: #25d366;
-	--colorPrincipal: #14a8b6;
-	--colorSecundario: #f7f6f6;
-	--colorTercario: #1b1b1b;
-	--colorPaleta1: #14a8b6;
+	--colorPrincipal: #1f4149;
+	--colorPrincipal2: #1f4853;
+	--colorPrincipal3: #2d5f6c;
+	--colorBlanco: #f7f6f6;
+	--colorNegro: #1b1b1b;
+	--colorTernario: #fabb5b;
 
-	--fuenteTitle: 'Outfit', sans-serif;
-	--fuenteDefault: 'Quicksand', sans-serif;
+	--fuenteTitle: 'TT Commons', sans-serif;
+	--fuenteDefault: 'TT Commons', sans-serif;
+}
+
+/* ------------------------------------------------------------------------- configuracion de tailwindcss ------------------------------------------------------------------------- */
+@theme {
+	--font-principal: 'TT Commons', ui-sans-serif, system-ui, sans-serif;
+	--color-principal: #1f4149;
+	--color-secundario-50: #1f4853;
+	--color-ternario: #fabb5b;
+	--color-blanco: #f7f6f6;
+	--color-negro: #1b1b1b;
 }
 
 /* ------------------------------------------------------------------------- seccion de config globales ------------------------------------------------------------------------- */
@@ -31,7 +36,7 @@ html {
 
 *,
 *:before,
-l*:after {
+*:after {
 	box-sizing: inherit;
 }
 
@@ -61,28 +66,28 @@ h4 {
 	cursor: pointer;
 	border-radius: 0.5rem;
 	font-size: 1.6rem;
-	color: var(--colorPrincipal);
-	border-color: var(--colorPrincipal);
-	border: 0.1rem solid var(--colorPrincipal);
+	color: var(--colorBlanco);
+	border-color: var(--colorBlanco);
+	border: 0.1rem solid var(--colorBlanco);
 }
 
 /* contenedor redes ahora  con colores personalizados*/
 .red-fb:hover {
-	border-color: var(--colorSecundario);
+	border-color: var(--colorBlanco);
 	background-color: var(--colorRedSocialFb);
-	color: var(--colorSecundario);
+	color: var(--colorBlanco);
 }
 
 .red-ig:hover {
 	background: linear-gradient(to bottom, #e53d9a, #f06292);
-	color: var(--colorSecundario);
-	border-color: var(--colorSecundario);
+	color: var(--colorBlanco);
+	border-color: var(--colorBlanco);
 }
 
 .red-wpp:hover {
 	background-color: var(--colorRedSocialWpp);
-	color: var(--colorSecundario);
-	border-color: var(--colorSecundario);
+	color: var(--colorBlanco);
+	border-color: var(--colorBlanco);
 }
 
 @media (min-width: 768px) {
@@ -99,7 +104,7 @@ h4 {
 }
 
 .navegacion__boton__compra__mini {
-	background-color: var(--colorPaleta1);
+	background-color: var(--colorTernario);
 	padding: 1rem;
 	border-radius: 0.5rem;
 	cursor: pointer;
@@ -115,14 +120,14 @@ h4 {
 	column-gap: 0.5rem;
 	max-width: 155rem;
 	padding: 1.5rem;
-	background-color: var(--colorPaleta1);
+	background-color: var(--colorTernario);
 	border-radius: 0.5rem;
 	justify-content: center;
 	display: flex;
 	font-size: 1.8rem;
 	align-items: center;
 	box-shadow: 1px 2px 3px #414040;
-	color: var(--colorTercario);
+	color: var(--colorNegro);
 }
 
 /* imagen */
@@ -134,6 +139,7 @@ h4 {
 @media (min-width: 768px) {
 	.banner__informacion {
 		max-width: 80%;
+		font-size: 2rem;
 	}
 
 	.imagen__principal-transfrom {
@@ -148,8 +154,7 @@ h4 {
 /* banner */
 .hero__contenedor__banner {
 	justify-content: center;
-	background-image: linear-gradient(to right, #00000073 0%, #00000073 100%),
-		url('../image/_e15a302e-b44e-470f-9a1c-66117cf87e6e.jpeg');
+	background-image: linear-gradient(to right, #00000073 0%, #00000073 100%), url('../image/_e15a302e-b44e-470f-9a1c-66117cf87e6e.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: right;
@@ -161,17 +166,17 @@ h4 {
 }
 
 .banner__seccion__text {
-	color: var(--colorSecundario);
+	color: var(--colorBlanco);
 }
 
 /* informacion calidad diseño */
 .hero__contenedor__calidad {
-	color: var(--colorSecundario);
-	background-color: var(--colorTercario);
+	color: var(--colorBlanco);
+	background-color: var(--colorNegro);
 }
 
 .title__mini__seccion__calidad {
-	color: var(--colorPaleta1);
+	color: var(--colorPrincipal2);
 }
 
 .titulo__calidad {
@@ -223,7 +228,7 @@ h4 {
 	padding-bottom: 3rem;
 }
 .title__mini__seccion__caracteristicas {
-	color: var(--colorTercario);
+	color: var(--colorNegro);
 }
 
 .contenedor__cards__hero {
@@ -236,8 +241,8 @@ h4 {
 
 .card {
 	padding: 2rem;
-	color: var(--colorSecundario);
-	background-color: var(--colorTercario);
+	color: var(--colorBlanco);
+	background-color: var(--colorNegro);
 	width: 30rem;
 	border-radius: 1rem;
 	height: 35rem;
@@ -251,7 +256,7 @@ h4 {
 
 /* seccion seccion de email */
 .contenido__email__hero {
-	background-color: var(--colorSecundario);
+	background-color: var(--colorBlanco);
 }
 
 input[type='text'],
@@ -279,7 +284,7 @@ input[type='email'] {
 }
 
 .btn-enviar_form {
-	color: var(--colorTercario);
+	color: var(--colorNegro);
 	border-radius: 1rem;
 	background-color: var(--colorPrincipal) !important;
 	padding: 1rem;
@@ -298,8 +303,8 @@ input[type='email'] {
 /* ------------------------------------------------------------------------- seccion de footer ------------------------------------------------------------------------- */
 .contenedor__footer {
 	padding: 3rem;
-	background-color: var(--colorTercario);
-	color: var(--colorSecundario);
+	background-color: var(--colorNegro);
+	color: var(--colorBlanco);
 }
 
 .contenedor__footer__slider {
@@ -317,15 +322,15 @@ input[type='email'] {
 	height: 3.5rem;
 	right: 3%;
 	font-size: 1.2rem;
-	background-color: var(--colorPaleta1);
+	background-color: var(--colorTernario);
 	padding-left: 1rem;
 	padding-right: 1rem;
-	color: var(--colorTercario);
+	color: var(--colorNegro);
 	border-radius: 5rem 5rem 5rem 5rem;
 }
 
 .text__subs {
-	color: var(--colorTercario);
+	color: var(--colorNegro);
 	border-radius: 5rem !important;
 }
 
@@ -354,13 +359,15 @@ input[type='email'] {
 .contenedor__copi {
 	padding: 0.5rem;
 	font-size: 1.2rem;
-	color: var(--colorSecundario);
+	color: var(--colorBlanco);
 	background-color: #1b1b1b;
 	border-top: 1px solid gray;
 }
 
 .contenedor__copi p > a {
-	color: var(--colorPrincipal);
+	color: var(--colorBlanco) !important;
+	text-decoration: underline;
+	text-underline-offset: 4px;
 }
 
 .btn_menu {
@@ -385,7 +392,7 @@ input[type='email'] {
 	position: fixed;
 	height: 100vh;
 	width: 100vw;
-	background-color: var(--colorSecundario);
+	background-color: var(--colorBlanco);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -406,27 +413,14 @@ input[type='email'] {
 
 /* ------------------------------------------------------------------------- catalogo nitrolix  ------------------------------------------------------------------------- */
 
-.contenedor__catalogo__hero {
-	background-color: var(--colorSecundario);
-}
-
-.contenedor__catalogo {
-	max-width: 100rem;
-}
-
-.catalogo {
-	position: relative;
-	width: 100%;
-
-	overflow: hidden;
-}
-
 .catalogo__card__content {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	background-color: var(--colorTercario);
-	color: var(--colorSecundario);
+	min-width: 40rem;
+	height: 45rem !important;
+	max-width: 100%;
+	background-color: var(--colorNegro);
+	color: var(--colorBlanco);
 	padding: 1rem;
 	border-radius: 1rem 5rem 1rem 1rem;
 	height: 40rem;
@@ -437,13 +431,14 @@ input[type='email'] {
 }
 
 .swiper-pagination-bullet-active {
-	background-color: var(--colorTercario);
+	background-color: var(--colorNegro);
 }
 
 .catalogo__card__titulo {
 	/* text-wrap: balance; */
 	margin: -1rem;
 	background: #3ca8b7;
+	color: var(--colorNegro);
 	padding: 1rem;
 	border-radius: 1rem 5rem;
 	height: 25rem;

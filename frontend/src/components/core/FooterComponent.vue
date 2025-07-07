@@ -1,13 +1,9 @@
 <template>
-	<!-- ------------------------------------------- SECCION ---------------------------------------------
-													seccion footer
-			----------------------------------------------------------------------------------------- -->
-
 	<footer class="contenedor__footer flex justify-center">
 		<div class="contenedor__footer__slider flex flex-col lg:flex-row justify-around lg:gap-x-2 gap-y-5">
 			<div class="flex flex-col items-center lg:items-start informacion__footer">
 				<div class="footer__icon">
-					<a href="/">
+					<a href="/" aria-label="volver al inicio">
 						<img src="/image/logo_principal.png" alt="" loading="lazy" width="200px" class="logo__footer" />
 					</a>
 				</div>
@@ -25,26 +21,18 @@
 						<div class="lista__redes__footer flex justify-center items-center lg:justify-start">
 							<ul class="flex gap-x-12">
 								<li>
-									<a href=" https://instagram.com/nitrolix01?igshid=YTQwZjQ0NmI0OA==" target="_blank">
-										<span class="icon__footer__redes"
-											><i class="fa-brands fa-instagram redes"></i
-										></span>
+									<a href=" https://instagram.com/nitrolix01?igshid=YTQwZjQ0NmI0OA==" target="_blank" aria-label="redes sociales de instagram">
+										<span class="icon__footer__redes"><i class="fa-brands fa-instagram redes"></i></span>
 									</a>
 								</li>
 								<li>
-									<a
-										href="https://www.facebook.com/profile.php?id=61552800174349&mibextid=9R9pXO"
-										target="_blank">
-										<span class="icon__footer__redes"
-											><i class="fa-brands fa-facebook redes"></i
-										></span>
+									<a href="https://www.facebook.com/profile.php?id=61552800174349&mibextid=9R9pXO" target="_blank" aria-label="redes sociales de facebook">
+										<span class="icon__footer__redes"><i class="fa-brands fa-facebook redes"></i></span>
 									</a>
 								</li>
 								<li>
-									<a href="https://wa.me/3026465782?text=Quiero mas informacion" target="_blank">
-										<span class="icon__footer__redes"
-											><i class="fa-brands fa-whatsapp redes"></i
-										></span>
+									<a href="https://wa.me/3026465782?text=Quiero mas informacion" target="_blank" aria-label="redes sociales de whatsapp">
+										<span class="icon__footer__redes"><i class="fa-brands fa-whatsapp redes"></i></span>
 									</a>
 								</li>
 							</ul>
