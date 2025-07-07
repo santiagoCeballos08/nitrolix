@@ -12,7 +12,7 @@
 		<!-- Caracteristicas -->
 		<caracteristica-home />
 		<!-- catalogo -->
-		<catalogo-home />
+		<!-- <catalogo-home /> -->
 
 		<!-- email -->
 		<!-- <email-home /> -->

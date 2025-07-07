@@ -17,6 +17,16 @@
 	--fuenteDefault: 'TT Commons', sans-serif;
 }
 
+/* ------------------------------------------------------------------------- configuracion de tailwindcss ------------------------------------------------------------------------- */
+@theme {
+	--font-principal: 'TT Commons', ui-sans-serif, system-ui, sans-serif;
+	--color-principal: #1f4149;
+	--color-secundario-50: #1f4853;
+	--color-ternario: #fabb5b;
+	--color-blanco: #f7f6f6;
+	--color-negro: #1b1b1b;
+}
+
 /* ------------------------------------------------------------------------- seccion de config globales ------------------------------------------------------------------------- */
 
 html {
@@ -56,9 +66,9 @@ h4 {
 	cursor: pointer;
 	border-radius: 0.5rem;
 	font-size: 1.6rem;
-	color: var(--colorPrincipal);
-	border-color: var(--colorPrincipal);
-	border: 0.1rem solid var(--colorPrincipal);
+	color: var(--colorBlanco);
+	border-color: var(--colorBlanco);
+	border: 0.1rem solid var(--colorBlanco);
 }
 
 /* contenedor redes ahora  con colores personalizados*/
@@ -129,6 +139,7 @@ h4 {
 @media (min-width: 768px) {
 	.banner__informacion {
 		max-width: 80%;
+		font-size: 2rem;
 	}
 
 	.imagen__principal-transfrom {
