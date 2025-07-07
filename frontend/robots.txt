@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Allow: /
+
+Sitemap: https://www.nitrolix.com/sitemap.xml
