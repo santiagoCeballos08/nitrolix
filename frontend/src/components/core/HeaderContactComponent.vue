@@ -1,6 +1,6 @@
 <template>
 	<!-- INICIO DE CONTACTOS -->
-	<div class="header__informacion bg-principal text-white p-4 w-full flex justify-center content-center">
+	<div class="header__informacion bg-secundario text-white p-4 w-full flex justify-center content-center">
 		<div class="contenedor__header lg:flex lg:gap-x-8 lg:justify-around">
 			<div class="contenedor__infro flex flex-col lg:flex-row lg:justify-center lg:gap-x-8">
 				<div class="informacion__tel flex justify-center pt-6 gap-x-2 lg:pt-2 text-base">
