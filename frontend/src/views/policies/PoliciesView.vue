@@ -8,7 +8,7 @@
 				</p>
 			</div>
 
-			<div class="bg-card border border-border rounded-2xl p-8 md:p-12 shadow-lg">
+			<div class="bg-card border border-border rounded-2xl p-8 md:p-12 shadow-lg" v-fade-in>
 				<div class="prose prose-lg max-w-none">
 					<div class="text-muted-foreground leading-relaxed space-y-6 text-base md:text-base">
 						<p>
@@ -36,7 +36,7 @@
 				</div>
 			</div>
 
-			<div class="mt-12 text-center">
+			<div class="mt-12 text-center" v-fade-in>
 				<h3 class="text-3xl font-bold text-foreground mb-6">¿Tienes Preguntas sobre Nuestras Políticas?</h3>
 				<p class="text-muted-foreground mb-8 max-w-2xl mx-auto text-base">
 					Nuestro equipo está disponible para aclarar cualquier duda sobre nuestras políticas y procedimientos.
