@@ -1,13 +1,16 @@
 @import 'tailwindcss';
-/* ------------------------------------------------------------------------- fuente principal ------------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------------- variables principales de la aplicacion ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- variables principales de la aplicacion y utilizades ------------------------------------------------------------------------- */
+
+.fade-in {
+	opacity: 0;
+}
 
 :root {
 	--colorRedSocialFb: #3b5998;
 	--colorRedSocialWpp: #25d366;
 	--colorPrincipal: #1f4149;
-	--colorPrincipal2: #1f4853;
+	--colorPrincipal2: #1e4652;
 	--colorPrincipal3: #2d5f6c;
 	--colorBlanco: #f7f6f6;
 	--colorNegro: #1b1b1b;
@@ -21,10 +24,13 @@
 @theme {
 	--font-principal: 'TT Commons', ui-sans-serif, system-ui, sans-serif;
 	--color-principal: #1f4149;
-	--color-secundario-50: #1f4853;
+	--color-secundario-50: #1e4652;
 	--color-ternario: #fabb5b;
 	--color-blanco: #f7f6f6;
 	--color-negro: #1b1b1b;
+
+	--text-title: 4rem;
+	--text-base: 1.8rem;
 }
 
 /* ------------------------------------------------------------------------- seccion de config globales ------------------------------------------------------------------------- */
@@ -56,7 +62,8 @@ h4 {
 /* ------------------------------------------------------------------------- diseño principal ------------------------------------------------------------------------- */
 
 .color__contact {
-	color: var(--colorPrincipal);
+	color: var(--colorBlanco);
+	font-weight: 700;
 }
 
 .contenedor__redes {

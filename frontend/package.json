@@ -30,6 +30,12 @@
 	"homepage": "https://github.com/santiagoCeballos08/nitrolix#readme",
 	"dependencies": {
 		"@formkit/tempo": "^0.1.2",
+		"@fortawesome/fontawesome-svg-core": "^7.0.0",
+		"@fortawesome/free-brands-svg-icons": "^7.0.0",
+		"@fortawesome/free-regular-svg-icons": "^7.0.0",
+		"@fortawesome/free-solid-svg-icons": "^7.0.0",
+		"@fortawesome/vue-fontawesome": "^3.1.1",
+		"@heroicons/vue": "^2.2.0",
 		"@tailwindcss/vite": "^4.1.8",
 		"@vitejs/plugin-vue": "^5.2.4",
 		"gsap": "^3.13.0",
@@ -37,7 +43,7 @@
 		"swiper": "^11.1.15",
 		"tailwindcss": "^4.1.8",
 		"vue": "^3.5.13",
-		"vue-router": "^4.4.5"
+		"vue-router": "^4.5.1"
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.20",
