@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<router-view />
+		<h1>Nuestras politicas</h1>
 	</div>
 </template>
 

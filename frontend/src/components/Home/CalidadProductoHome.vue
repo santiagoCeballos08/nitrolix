@@ -8,7 +8,7 @@
 				Más allá del impacto en la mejora del producto, nos diferenciamos por el servicio y calidad humana; dando así ese impulso evolutivo con nuestro asesoramiento
 			</p>
 		</div>
-		<div class="contenedor__calidad__cualidades">
+		<div class="contenedor__calidad__cualidades" v-fade-scroll>
 			<div class="contenedor__card card__1">
 				<div class="icon__card"><span class="text-8xl material-symbols-outlined">handshake</span></div>
 				<div class="titulo__card font-bold text-4xl my-3">Compromiso</div>

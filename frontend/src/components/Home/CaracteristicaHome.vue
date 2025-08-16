@@ -3,7 +3,7 @@
 		<div class="title__mini__seccion__caracteristicas text-center font-bold pt-5 !text-blanco">Caracteristicas</div>
 		<div class="title__seccion__calidad mt-6">
 			<!--  -->
-			<h2 class="titulo__calidad text-center font-bold text-6xl text-ternario">Aplicaciones en los diferentes campos</h2>
+			<h2 class="titulo__calidad text-center font-bold text-6xl text-ternario" v-fade-scroll>Aplicaciones en los diferentes campos</h2>
 			<!-- <p class="info__calidad text-center mt-5">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum fugiat suscipit sunt laboriosam. Suscipit
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum fugiat suscipit sunt laboriosam. Suscipit
@@ -14,7 +14,7 @@
 		<!-- seccion cards -->
 		<div class="contenedor__cards__seccion flex justify-center mt-6">
 			<div class="contenedor__cards__hero lg:flex lg:justify-center">
-				<div class="contenedor_cards justify-center flex flex-col items-center gap-y-5">
+				<div class="contenedor_cards justify-center flex flex-col items-center gap-y-5" v-fade-scroll>
 					<div class="card flex flex-col card-1 items-center">
 						<div class="card__head flex mb-6 gap-4 items-center text-4xl">
 							<div class="card__icon">
@@ -50,7 +50,7 @@
 						<img loading="lazy" class="animation-jump" src="/image/nitrogeno.png" alt="imagen de nitrolix" />
 					</picture>
 				</div>
-				<div class="contenedor_cards flex flex-col items-center gap-y-5">
+				<div class="contenedor_cards flex flex-col items-center gap-y-5" v-fade-scroll>
 					<div class="card flex flex-col card-1 items-center">
 						<div class="card__head flex items-center mb-6 gap-4 text-4xl">
 							<div class="card__icon">
