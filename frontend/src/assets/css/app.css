@@ -10,7 +10,7 @@
 	--colorRedSocialFb: #3b5998;
 	--colorRedSocialWpp: #25d366;
 	--colorPrincipal: #1f4149;
-	--colorPrincipal2: #1e4652;
+	--colorPrincipal2: #15313a;
 	--colorPrincipal3: #2d5f6c;
 	--colorBlanco: #f7f6f6;
 	--colorNegro: #1b1b1b;
@@ -24,7 +24,7 @@
 @theme {
 	--font-principal: 'TT Commons', ui-sans-serif, system-ui, sans-serif;
 	--color-principal: #1f4149;
-	--color-secundario-50: #1e4652;
+	--color-secundario: #15313a;
 	--color-ternario: #fabb5b;
 	--color-blanco: #f7f6f6;
 	--color-negro: #1b1b1b;
@@ -51,6 +51,10 @@ body {
 	font-size: 1.6rem /* esto equivale a 16px */;
 	line-height: 2;
 	font-family: var(--fuenteDefault);
+}
+
+a {
+	text-underline-offset: 0.4rem;
 }
 
 h1,
