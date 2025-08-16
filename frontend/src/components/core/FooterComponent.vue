@@ -6,7 +6,7 @@
 					<a href="/" aria-label="volver al inicio">
 						<img src="/image/logo_principal.png" alt="" loading="lazy" width="200px" class="logo__footer" />
 					</a>
-					<ul class="mt-8">
+					<ul class="mt-8 text-center lg:text-start">
 						<li>
 							<router-link class="hover:underline" to="/policies">Nuestras políticas</router-link>
 						</li>
