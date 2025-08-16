@@ -2,20 +2,23 @@
 let contenedorLinks = document.querySelector('.contenedor__navegacion_links');
 let btn_menu__toggle = document.querySelector('.btn_menu__toggle');
 
-// document.addEventListener('DOMContentLoaded', () => {
-// 	eventos();
-// 	function eventos() {
-// 		btn_menu__toggle.addEventListener('click', () => {
-// 			if (contenedorLinks.classList.contains('hidden')) {
-// 				contenedorLinks.classList.remove('hidden');
-// 				return;
-// 			}
+document.addEventListener('DOMContentLoaded', () => {
+	const links = document.querySelectorAll('a[href^="#"]');
 
-// 			contenedorLinks.classList.add('hidden');
-// 		});
-// 	}
-// });
+	links.forEach((link) => {
+		link.addEventListener('click', (e) => {
+			const targetId = link.getAttribute('href');
+			const target = document.querySelector(targetId);
 
-/*---------------------------------------------------------------------------------
-slider de catalogo
-----------------------------------------------------------------------------------*/
+			if (target) {
+				e.preventDefault();
+				const top = target.getBoundingClientRect().top + window.scrollY - 50; // offset de 50px
+
+				window.scrollTo({
+					top,
+					behavior: 'smooth',
+				});
+			}
+		});
+	});
+});

@@ -13,7 +13,7 @@
 				<div class="contenedor__links__footer">
 					<p class="mb-4">Suscribete para conocer nuevas noticias</p>
 					<div class="subs-cliente">
-						<input type="email" placeholder="ingresa el correo" class="text__subs" id="subsText" />
+						<input type="email" placeholder="ingresa el correo" class="text__subs bg-white" id="subsText" />
 						<button class="boton__subs">Suscribete</button>
 					</div>
 					<div class="redes__sociales mt-3">

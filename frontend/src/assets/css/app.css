@@ -38,6 +38,7 @@
 html {
 	box-sizing: border-box;
 	font-size: 65.5%; /* para que un 1rem sea igual a 10 pixeles */
+	scroll-behavior: smooth;
 }
 
 *,
