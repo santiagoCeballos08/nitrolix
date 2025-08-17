@@ -39,7 +39,7 @@
 				<div class="bg-card border border-border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
 					<i class="fas fa-handshake text-5xl text-ternario mb-4"></i>
 					<h4 class="font-semibold text-card-foreground text-4xl mb-2">Integridad</h4>
-					<p class="text-base text-muted-foreground">Actuamos con honestidad y transparencia en todas nuestras clientes.</p>
+					<p class="text-base text-muted-foreground">Actuamos con honestidad y transparencia en todas nuestros clientes.</p>
 				</div>
 				<div class="bg-card border border-border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
 					<i class="fas fa-lightbulb text-5xl text-ternario mb-4"></i>
