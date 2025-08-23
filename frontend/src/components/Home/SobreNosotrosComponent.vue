@@ -33,7 +33,7 @@
 						<div class="icon__sobre__nosotros">
 							<certificate-icon-component class="h-80 mx-auto" :color="'#fabb5b'" />
 						</div>
-						<div class="font-semibold capitalize text-4xl mb-4">experiencia profecional</div>
+						<div class="font-semibold capitalize text-4xl mb-4">experiencia profesional</div>
 						<div class="opacity-70">Años de experiencia en el manejo seguro y distribución de nitrógeno líquido</div>
 					</figure>
 				</div>

@@ -8,7 +8,8 @@
 				</h1>
 				<p class="banner__informacion text-center lg:text-left text-animate font-4xl container text-muted-foreground leading-relaxed">
 					En Nitrolix sabemos que la continuidad de tus procesos no puede detenerse. Por eso, llevamos nitrógeno líquido y termos criogénicos justo donde los necesitas, a
-					tiempo y sin complicaciones. Con nosotros, tienes un aliado que entiende tus tiempos, cuida tus procesos y respalda cada entrega
+					tiempo y sin complicaciones. <br />
+					Con nosotros, tienes un aliado que entiende tus tiempos, cuida tus procesos y respalda cada entrega
 				</p>
 				<div class="banner__boton__contenedor flex flex-col md:flex-row justify-center lg:justify-start gap-8 mt-16">
 					<a href="tel:+573026465782" class="boton__compra bg-ternario font-semibold capitalize"><phone-icon class="size-8 mr-4" /> contactar ahora </a>
