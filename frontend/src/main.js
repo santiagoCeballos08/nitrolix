@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import './assets/css/fonts.css';
 import './assets/css/app.css';
+import './assets/css/appTailwind.css';
 import './assets/css/animaciones.css';
 import './assets/css/icons/css/all.css';
 import router from './router';
@@ -10,16 +11,18 @@ import router from './router';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-// Iconos que quieras usar
+// Iconos que fontAwesome
 import { faUser, faHome } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faMicroscope } from '@fortawesome/free-solid-svg-icons';
+import { faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 // imports de directivas personalizadas
 import fadeIn from './assets/directives/fedaInDirectives.js';
 import showAnimate from './assets/directives/showAnimate.js';
 import fadeScroll from './assets/directives/fadeScroll';
 
-library.add(faUser, faHome, faFacebook, faTwitter);
+library.add(faUser, faHome, faFacebook, faTwitter, faMicroscope, faUtensils, faWhatsapp);
 
 const app = createApp(App);
 

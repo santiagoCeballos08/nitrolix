@@ -12,7 +12,7 @@
 			</div>
 			<div class="informacion__redes flex justify-center mt-5 lg:mt-0 lg:pt-0 gap-x-3 lg:items-center">
 				<a
-					href="https://instagram.com/nitrolix01?igshid=YTQwZjQ0NmI0OA=="
+					href="https://www.instagram.com/nitrolix_co?igsh=MW5oOGRwMTNmZXc1ag%3D%3D&utm_source=qr"
 					target="_blanc"
 					class="contenedor__redes red-ig p-2 redes flex justify-center"
 					aria-label="redes sociales de instagram">
