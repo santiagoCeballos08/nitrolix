@@ -26,7 +26,10 @@
 						<div class="lista__redes__footer flex justify-center items-center lg:justify-start">
 							<ul class="flex gap-x-12">
 								<li>
-									<a href=" https://instagram.com/nitrolix01?igshid=YTQwZjQ0NmI0OA==" target="_blank" aria-label="redes sociales de instagram">
+									<a
+										href="https://www.instagram.com/nitrolix_co?igsh=MW5oOGRwMTNmZXc1ag%3D%3D&utm_source=qr "
+										target="_blank"
+										aria-label="redes sociales de instagram">
 										<span class="icon__footer__redes"><i class="fa-brands fa-instagram redes"></i></span>
 									</a>
 								</li>
