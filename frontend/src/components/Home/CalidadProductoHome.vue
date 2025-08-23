@@ -50,7 +50,7 @@
 					</ul>
 				</div>
 				<div class="card__buttons">
-					<a href="https://wa.link/vl0mmj" class="capitalize button__contact bg-ternario text-white">programar revision</a>
+					<a href="https://wa.link/vl0mmj" class="capitalize button__contact bg-ternario text-white">programar revisión</a>
 				</div>
 			</div>
 		</div>

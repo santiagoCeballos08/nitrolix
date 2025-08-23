@@ -9,7 +9,7 @@
 						<img loading="lazy" src="../../../public/image/logo_principal.png" alt="logo de litrolix" class="icono__img" />
 					</picture>
 
-					<a class="lg:hidden btn_menu__toggle"><span class="material-symbols-outlined btn_menu" @click="toggleModal"> menu </span></a>
+					<span class="lg:hidden btn_menu__toggle"> <Bars3BottomRightIcon class="btn_menu size-20" @click="toggleModal" /></span>
 				</div>
 
 				<div :class="hidden" class="lg:!block mt-7 md:mt-0 contenedor__navegacion_links" v-fade-animate-show="visible">
@@ -45,6 +45,8 @@
 			visible.value = false;
 		}
 	};
+
+	import { Bars3BottomRightIcon } from '@heroicons/vue/24/outline';
 </script>
 
 <style scoped></style>
