@@ -16,8 +16,8 @@
 					<div class="navegacion__rels__links flex lg:gap-x-8 gap-y-8 items-center lg:flex-row flex-col text-base">
 						<router-link class="p-4 rounded-sm hover:bg-secundario" to="/" @click="closeMenu">Inicio</router-link>
 						<router-link class="p-4 rounded-sm hover:bg-secundario" to="/about" @click="closeMenu">Nosotros</router-link>
-						<a class="p-4 rounded-sm hover:bg-secundario" href="#sobre_producto" @click="closeMenu">Producto</a>
-						<a class="p-4 rounded-sm hover:bg-secundario" href="#contenedorCaracteristicas" @click="closeMenu">Característica</a>
+						<a class="p-4 rounded-sm hover:bg-secundario" href="#servicios" @click="closeMenu">Serivicos</a>
+
 						<a class="p-4 rounded-sm hover:bg-secundario" href="#contacto" @click="closeMenu">Contacto</a>
 						<a href="https://wa.me/3026465782?text=Quiero mas informacion" target="_blank" class="navegacion__boton__compra__mini lg:ml-10 font-bold">
 							Comprar ahora

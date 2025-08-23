@@ -1,86 +1,69 @@
 <template>
-	<section class="contenedor__caracteristicas" id="contenedorCaracteristicas">
-		<div class="title__mini__seccion__caracteristicas text-center font-bold pt-5 !text-blanco">Caracteristicas</div>
+	<section class="contenedor__caracteristicas py-50" id="aplicaciones">
+		<div class="title__mini__seccion__calidad text-center rounded-full px-4 text-[12px] !text-black bg-gray-100 max-w-fit mx-auto">Caracteristicas</div>
 		<div class="title__seccion__calidad mt-6">
 			<!--  -->
-			<h2 class="titulo__calidad text-center font-bold text-6xl text-ternario" v-fade-scroll>Aplicaciones en los diferentes campos</h2>
-			<!-- <p class="info__calidad text-center mt-5">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum fugiat suscipit sunt laboriosam. Suscipit
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nostrum fugiat suscipit sunt laboriosam. Suscipit
-					ex nam dicta officiis, eveniet culpa aliquam enim exercitationem magnam voluptate beatae perspiciatis dolorum
-					accusantium?
-				</p> -->
+			<h2 class="titulo__calidad text-center font-bold text-6xl text-ternario" v-fade-scroll>Usos del Nitrógeno</h2>
+			<p class="info__calidad text-center mt-5 text-gray-600">Descubre las multiples aplicaciones del nitrógeno liquido en diferentes industrias</p>
 		</div>
 		<!-- seccion cards -->
-		<div class="contenedor__cards__seccion flex justify-center mt-6">
-			<div class="contenedor__cards__hero lg:flex lg:justify-center">
-				<div class="contenedor_cards justify-center flex flex-col items-center gap-y-5" v-fade-scroll>
-					<div class="card flex flex-col card-1 items-center">
-						<div class="card__head flex mb-6 gap-4 items-center text-4xl">
-							<div class="card__icon">
-								<span class="material-symbols-outlined text-center"> engineering </span>
+		<div class="contenedor__cards__seccion flex justify-center mt-6" v-fade-scroll>
+			<div class="contenedor__cards__hero lg:flex lg:justify-center w-home">
+				<!-- seccion de contenedor aplicaicones de uso -->
+				<div class="contenedor_cards justify-center flex flex-col md:flex-row flex-wrap items-center gap-y-5">
+					<!-- card -->
+					<div class="card__aplicacion flex flex-col card-1 items-center">
+						<div class="card__head mb-6 gap-4 items-center text-4xl">
+							<div class="card__icon flex flex-col items-center bg-red-200 rounded-full w-fit mx-auto">
+								<utensils-icon-component class="icon" :color="'#dc2626'" />
 							</div>
-							<span class="card__titulo font-black">Metalmecanica</span>
+							<h3 class="card__titulo">Gastronomía</h3>
 						</div>
 						<div class="card__body">
-							<div class="card__info">
-								El nitrógeno se utiliza en la cementación para acelerar la absorción de carbono en el metal tratado durante el proceso de carburación (combinación
-								del carbono y el hierro para producir el acero) para dar más dureza al material.
-							</div>
+							<div class="card__info">Técnicas culinarias avanzadas, congelación ápida y presentaciones espectaculares en alta cocina</div>
 						</div>
 					</div>
-					<div class="card flex flex-col card-1 items-center">
-						<div class="card__head flex mb-6 gap-4 items-center text-4xl">
-							<div class="card__icon">
-								<span class="material-symbols-outlined text-center"> compost </span>
+					<!-- fin card -->
+					<!-- card -->
+					<div class="card__aplicacion flex flex-col card-1 items-center">
+						<div class="card__head mb-6 gap-4 items-center text-4xl">
+							<div class="card__icon flex flex-col items-center bg-gray-200 rounded-full w-fit mx-auto">
+								<wrench-icon-component class="icon" :color="'#495361'" />
 							</div>
-							<span class="card__titulo font-black">Botánica</span>
+							<h3 class="card__titulo">Metalmecánica</h3>
 						</div>
 						<div class="card__body">
-							<div class="card__info">
-								Tanto en las plantas como en los seres humanos, el nitrógeno se usa para producir aminoácidos, que producen las proteínas que construyen las
-								células, y es uno de los componentes básicos del ADN.
-							</div>
+							<div class="card__info">Tratamientos térmicos, soldadura especializada y procesos de manufactura de precisión</div>
 						</div>
 					</div>
+					<!-- fin card -->
+					<!-- card -->
+					<div class="card__aplicacion flex flex-col card-1 items-center">
+						<div class="card__head mb-6 gap-4 items-center text-4xl">
+							<div class="card__icon flex flex-col items-center bg-pink-200 rounded-full w-fit mx-auto">
+								<heart-icon-component class="icon" :color="'#de3e86'" />
+							</div>
+							<h3 class="card__titulo">Dermatología</h3>
+						</div>
+						<div class="card__body">
+							<div class="card__info">Crioterapia, tratamientos estéticos y procedimientos médicos especializados</div>
+						</div>
+					</div>
+					<!-- fin card -->
+					<!-- card -->
+					<div class="card__aplicacion flex flex-col card-1 items-center">
+						<div class="card__head mb-6 gap-4 items-center text-4xl">
+							<div class="card__icon flex flex-col items-center bg-blue-200 rounded-full w-fit mx-auto">
+								<microscope-icon-component class="icon" :color="'#5587f0'" />
+							</div>
+							<h3 class="card__titulo">Laboratorio</h3>
+						</div>
+						<div class="card__body">
+							<div class="card__info">Conservación de muestras, investigación científica y procesos de análisis especializados</div>
+						</div>
+					</div>
+					<!-- fin card -->
 				</div>
-				<div class="contenedor__cards__image">
-					<picture class="contenedor_image">
-						<source srcset="/image/nitrogeno.png" />
-						<img loading="lazy" class="animation-jump" src="/image/nitrogeno.png" alt="imagen de nitrolix" />
-					</picture>
-				</div>
-				<div class="contenedor_cards flex flex-col items-center gap-y-5" v-fade-scroll>
-					<div class="card flex flex-col card-1 items-center">
-						<div class="card__head flex items-center mb-6 gap-4 text-4xl">
-							<div class="card__icon">
-								<span class="material-symbols-outlined text-center"> Vaccines </span>
-							</div>
-							<span class="card__titulo font-black">Medicina</span>
-						</div>
-						<div class="card__body">
-							<div class="card__info">
-								Las aplicaciones de nitrógeno medicinal en el entorno sanitario son las siguientes: En la criopreservación (Biobancos) para la conservación a largo
-								plazo de líneas celulares, muestras de tejido, células madre, sangre, componentes sanguíneos, otras células y otros fluidos corporales.
-							</div>
-						</div>
-					</div>
-					<div class="card flex flex-col card-1 items-center">
-						<div class="card__head flex items-center mb-6 gap-4 text-4xl">
-							<div class="card__icon">
-								<span class="material-symbols-outlined text-center"> Dermatology </span>
-							</div>
-							<span class="card__titulo font-black">Dermatología</span>
-						</div>
-						<div class="card__body">
-							<div class="card__info">
-								Lo usamos para eliminar diferentes lesiones cutáneas como: queratosis actínicas, acrocordones, verrugas, etc. El objetivo del tratamiento es
-								congelar y eliminar las lesiones tratadas.
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- fin de cards -->
 			</div>
 			<!-- fin de contenedor de la informacion -->
 		</div>
@@ -88,6 +71,12 @@
 	</section>
 </template>
 
-<script setup></script>
+<script setup>
+	import { WrenchIcon } from '@heroicons/vue/24/outline';
+	import UtensilsIconComponent from '@/assets/css/icons/UtensilsIconComponent.vue';
+	import WrenchIconComponent from '@/assets/css/icons/WrenchIconComponent.vue';
+	import HeartIconComponent from '@/assets/css/icons/HeartIconComponent.vue';
+	import MicroscopeIconComponent from '@/assets/css/icons/MicroscopeIconComponent.vue';
+</script>
 
 <style scoped></style>

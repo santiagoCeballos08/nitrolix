@@ -9,8 +9,12 @@
 
 		<!-- Caracteristicas -->
 		<caracteristica-home />
-		<!-- catalogo -->
-		<!-- <catalogo-home /> -->
+
+		<!-- mas sobre nosotros -->
+		<sobre-nosotros-component />
+
+		<!-- sobre nosotros  -->
+		<contacto-home-component />
 	</div>
 </template>
 
@@ -18,6 +22,8 @@
 	import CaracteristicaHome from '../../components/Home/CaracteristicaHome.vue';
 	import CalidadProductoHome from '../../components/Home/CalidadProductoHome.vue';
 	import BannerHome from '../../components/Home/BannerHome.vue';
+	import SobreNosotrosComponent from '@/components/Home/SobreNosotrosComponent.vue';
+	import ContactoHomeComponent from '@/components/Home/ContactoHomeComponent.vue';
 	import EmailHome from '../../components/Home/EmailHome.vue';
 	import CatalogoHome from '../../components/Home/CatalogoHome.vue';
 	import { onMounted, ref } from 'vue';

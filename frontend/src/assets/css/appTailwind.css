@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------------- configuracion de tailwindcss ------------------------------------------------------------------------- */
+
+@theme {
+	--font-principal: 'TT Commons', ui-sans-serif, system-ui, sans-serif;
+	--color-principal: #1f4149;
+	--color-secundario: #15313a;
+	--color-ternario: #fabb5b;
+	--color-blanco: #f7f6f6;
+	--color-negro: #1b1b1b;
+	--container-home: 140rem;
+	--text-title: 4rem;
+	--text-base: 1.8rem;
+}
+
+/* ------------------------------------------------------------------------- clases personalizados ------------------------------------------------------------------------- */
+
+@layer components {
+	.contenedor__card {
+		@apply flex flex-col justify-between rounded-lg shadow-md px-8 py-8 bg-white;
+	}
+	.icon__card {
+		@apply bg-gray-200 text-principal p-4 rounded-full w-fit mx-auto mb-4;
+	}
+
+	.info__card {
+		@apply leading-relaxed text-base;
+	}
+
+	.button__contact {
+		@apply w-full text-center  inline-block rounded-md mt-4;
+	}
+
+	.card__aplicacion {
+		@apply p-8 max-w-[40rem];
+	}
+
+	.card__aplicacion .card__icon .icon {
+		@apply h-[7rem] p-7;
+	}
+
+	.card__aplicacion .card__titulo {
+		@apply text-center font-semibold capitalize;
+	}
+
+	.card__aplicacion .card__body .card__info {
+		@apply text-center text-gray-600;
+	}
+
+	/* sobre nosotros */
+	.iformacion__stast {
+		@apply flex items-center gap-4;
+	}
+	.iformacion__stast .stats__icon {
+		@apply p-4 bg-ternario rounded-xl;
+	}
+	.iformacion__stast .stats__info {
+		@apply leading-9;
+	}
+}

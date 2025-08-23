@@ -1,14 +1,18 @@
 <template>
-	<section class="hero__contenedor__banner flex" id="banner">
-		<div class="contenedor__banner p-4 grid lg:grid-cols-1 grid-rows-1">
+	<section class="hero__contenedor__banner flex justify-center py-20" id="banner">
+		<div class="contenedor__banner p-4 grid grid-cols-1 md:grid-cols-2 max-w-[140rem]">
 			<div class="banner__seccion__text flex flex-col justify-center">
-				<h1 class="banner__titulo text-7xl font-semibold mb-11 text-center lg:text-left text-animate">Nitrolix Análisis & Evolución</h1>
-				<p class="banner__informacion text-center lg:text-left text-animate font-4xl container">
-					Comprendemos las nuevas tendencias de desarrollo en los diferentes sectores y brindamos el apoyo basado en la seguridad y confianza; somos ese puente en la
-					evolución e industria sumandonos a las diferentes ramas tales cómo: Metalmecanica, Dermatología, Centros de investigación, Botánica, etc...
+				<span class="px-4 bg-ternario max-w-fit text-[12px] rounded-full font-bold mb-8">Distribución personalizada</span>
+				<h1 class="banner__titulo text-7xl font-semibold mb-11 text-center lg:text-left text-animate uppercase">
+					Nitrolix - LA EVOLUCION DEL <span class="text-ternario">NITROGENO</span>
+				</h1>
+				<p class="banner__informacion text-center lg:text-left text-animate font-4xl container text-muted-foreground leading-relaxed">
+					En Nitrolix sabemos que la continuidad de tus procesos no puede detenerse. Por eso, llevamos nitrógeno líquido y termos criogénicos justo donde los necesitas, a
+					tiempo y sin complicaciones. Con nosotros, tienes un aliado que entiende tus tiempos, cuida tus procesos y respalda cada entrega
 				</p>
-				<div class="banner__boton__contenedor flex justify-center lg:justify-start">
-					<a href="#contenedorCaracteristicas" class="boton__compra font-semibold">conocer mas <span class="material-symbols-outlined"> arrow_forward </span></a>
+				<div class="banner__boton__contenedor flex flex-col md:flex-row justify-center lg:justify-start gap-8 mt-16">
+					<a href="tel:+573026465782" class="boton__compra bg-ternario font-semibold capitalize"><phone-icon class="size-8 mr-4" /> contactar ahora </a>
+					<a href="" class="boton__compra border border-white !text-white">conoce más <arrow-right-icon class="size-8 ml-4" /> </a>
 				</div>
 			</div>
 		</div>
@@ -19,6 +23,7 @@
 	import gsap from 'gsap';
 	import { SplitText } from 'gsap/SplitText';
 	import { onMounted } from 'vue';
+	import { PhoneIcon, ArrowRightIcon } from '@heroicons/vue/24/outline';
 
 	gsap.registerPlugin(SplitText);
 
