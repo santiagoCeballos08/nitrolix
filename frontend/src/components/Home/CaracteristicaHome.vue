@@ -1,6 +1,6 @@
 <template>
-	<section class="contenedor__caracteristicas py-50" id="aplicaciones">
-		<div class="title__mini__seccion__calidad text-center rounded-full px-4 text-[12px] !text-black bg-gray-100 max-w-fit mx-auto">Caracteristicas</div>
+	<section class="contenedor__caracteristicas py-50">
+		<div class="title__mini__seccion__calidad text-center rounded-full px-4 text-[12px] !text-black bg-gray-100 max-w-fit mx-auto" id="aplicaciones">Caracteristicas</div>
 		<div class="title__seccion__calidad mt-6">
 			<!--  -->
 			<h2 class="titulo__calidad text-center font-bold text-6xl text-ternario" v-fade-scroll>Usos del Nitrógeno</h2>
