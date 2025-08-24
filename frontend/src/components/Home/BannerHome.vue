@@ -13,7 +13,7 @@
 				</p>
 				<div class="banner__boton__contenedor flex flex-col md:flex-row justify-center lg:justify-start gap-8 mt-16">
 					<a href="tel:+573026465782" class="boton__compra bg-ternario font-semibold capitalize"><phone-icon class="size-8 mr-4" /> contactar ahora </a>
-					<a href="" class="boton__compra border border-white !text-white">conoce más <arrow-right-icon class="size-8 ml-4" /> </a>
+					<a href="#sobreNosotros" class="boton__compra border border-white !text-white">conoce más <arrow-right-icon class="size-8 ml-4" /> </a>
 				</div>
 			</div>
 		</div>
