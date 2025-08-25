@@ -3,7 +3,7 @@
 	<section class="hero__contenedor__calidad p-12 bg-gray-100 py-30">
 		<p class="title__mini__seccion__calidad text-center rounded-full px-4 text-[12px] !text-white bg-principal max-w-fit mx-auto" id="servicios">Nuestros Servicios</p>
 		<div class="title__seccion__calidad mt-6">
-			<h2 class="titulo__calidad text-center text-6xl font-semibold">Serivicos Especializados</h2>
+			<h2 class="titulo__calidad text-center text-6xl font-semibold">Servicios Especializados</h2>
 			<p class="info__calidad text-center mt-5 lg:max-w-6xl lg:pt-4">Ofrecemos soluciones integrales en nitrogeno liquido con la más alta calidad y confiabilidad</p>
 		</div>
 		<div class="contenedor__calidad__cualidades mx-auto container-home" v-fade-scroll>
