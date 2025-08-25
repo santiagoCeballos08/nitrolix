@@ -54,8 +54,9 @@
 	<div class="contenedor__copi">
 		<div class="copy__text">
 			<p class="text-center">
-				&copy; <span> {{ year }}</span> Nitrolix. Todos los derechos reservados por Nitrolix - desarrollado por
-				<a href="https://github.com/THEGLUM">santiago ceballos</a>
+				&copy; <span> {{ year }}</span> Nitrolix. Todos los derechos reservados por Nitrolix
+				 <!-- desarrollado por
+				<a href="https://github.com/THEGLUM">santiago ceballos</a> -->
 			</p>
 		</div>
 	</div>
