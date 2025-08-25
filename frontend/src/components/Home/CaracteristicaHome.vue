@@ -20,7 +20,7 @@
 							<h3 class="card__titulo">Gastronomía</h3>
 						</div>
 						<div class="card__body">
-							<div class="card__info">Técnicas culinarias avanzadas, congelación ápida y presentaciones espectaculares en alta cocina</div>
+							<div class="card__info">Técnicas culinarias avanzadas, congelación rápida y presentaciones espectaculares en alta cocina</div>
 						</div>
 					</div>
 					<!-- fin card -->
