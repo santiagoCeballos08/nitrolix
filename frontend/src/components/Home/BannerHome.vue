@@ -2,7 +2,7 @@
 	<section class="hero__contenedor__banner flex justify-center py-20" id="banner">
 		<div class="contenedor__banner p-4 grid grid-cols-1 md:grid-cols-2 max-w-[140rem]">
 			<div class="banner__seccion__text flex flex-col justify-center">
-				<span class="px-4 bg-ternario max-w-fit text-[12px] rounded-full font-bold mb-8">Distribución personalizada</span>
+				<span class="px-4 bg-ternario text-negro max-w-fit text-[12px] rounded-full font-bold mb-8">Distribución personalizada</span>
 				<h1 class="banner__titulo text-7xl font-semibold mb-11 text-center lg:text-left text-animate uppercase">
 					Nitrolix - LA EVOLUCIÓN DEL <span class="text-ternario">NITRÓGENO</span>
 				</h1>

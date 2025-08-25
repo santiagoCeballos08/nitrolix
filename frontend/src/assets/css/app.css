@@ -103,6 +103,7 @@ h4 {
 
 .navegacion__boton__compra__mini {
 	background-color: var(--colorTernario);
+	color: var(--colorNegro);
 	padding: 1rem;
 	border-radius: 0.5rem;
 	cursor: pointer;

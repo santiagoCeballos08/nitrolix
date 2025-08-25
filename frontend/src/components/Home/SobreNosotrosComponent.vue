@@ -2,7 +2,7 @@
 	<section class="bg-principal flex justify-center py-20" id="sobreNosotros">
 		<article class="p-4 grid grid-cols-1 md:grid-cols-2 w-home gap-20">
 			<article class="banner__seccion__text flex flex-col justify-center" v-fade-scroll>
-				<span class="px-4 bg-ternario max-w-fit text-[12px] rounded-full font-bold mb-8">Sobre Nosotros</span>
+				<span class="px-4 bg-ternario text-negro max-w-fit text-[12px] rounded-full font-bold mb-8">Sobre Nosotros</span>
 				<h1 class="text-7xl font-semibold mb-11 text-center lg:text-left text-animate Capitalize">Más sobre nosotro</h1>
 				<p class="text-center lg:text-left text-animate font-4xl container text-muted-foreground leading-relaxed">
 					Somos una empresa especializada en la distribución de nitrógeno líquido y servicios criogénicos en Medellín y el área metropolitana. Nuestro compromiso es
