@@ -16,9 +16,9 @@
 					<div class="navegacion__rels__links flex lg:gap-x-8 gap-y-8 items-center lg:flex-row flex-col text-base">
 						<router-link class="p-4 rounded-sm hover:bg-secundario" to="/" @click="closeMenu">Inicio</router-link>
 						<router-link class="p-4 rounded-sm hover:bg-secundario" to="/about" @click="closeMenu">Nosotros</router-link>
-						<a class="p-4 rounded-sm hover:bg-secundario" href="#servicios" @click="closeMenu">Servicios</a>
-						<a class="p-4 rounded-sm hover:bg-secundario" href="#aplicaciones" @click="closeMenu">aplicaciones</a>
-						<a class="p-4 rounded-sm hover:bg-secundario" href="#contacto" @click="closeMenu">Contacto</a>
+						<router-link class="p-4 rounded-sm hover:bg-secundario" :to="{ path: '/', hash: '#servicios' }" @click="closeMenu"> Servicios </router-link>
+						<router-link class="p-4 rounded-sm hover:bg-secundario" :to="{ path: '/', hash: '#aplicaciones' }" @click="closeMenu"> aplicaciones </router-link>
+						<router-link class="p-4 rounded-sm hover:bg-secundario" :to="{ path: '/', hash: '#contacto' }" @click="closeMenu"> Contacto </router-link>
 						<a href="https://wa.me/3026465782?text=Quiero mas informacion" target="_blank" class="navegacion__boton__compra__mini lg:ml-10 font-bold">
 							Comprar ahora
 						</a>
