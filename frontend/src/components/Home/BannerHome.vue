@@ -4,7 +4,7 @@
 			<div class="banner__seccion__text flex flex-col justify-center">
 				<span class="px-4 bg-ternario max-w-fit text-[12px] rounded-full font-bold mb-8">Distribución personalizada</span>
 				<h1 class="banner__titulo text-7xl font-semibold mb-11 text-center lg:text-left text-animate uppercase">
-					Nitrolix - LA EVOLUCION DEL <span class="text-ternario">NITROGENO</span>
+					Nitrolix - LA EVOLUCIÓN DEL <span class="text-ternario">NITRÓGENO</span>
 				</h1>
 				<p class="banner__informacion text-center lg:text-left text-animate font-4xl container text-muted-foreground leading-relaxed">
 					En Nitrolix sabemos que la continuidad de tus procesos no puede detenerse. Por eso, llevamos nitrógeno líquido y termos criogénicos justo donde los necesitas, a
