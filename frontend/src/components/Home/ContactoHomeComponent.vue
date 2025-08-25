@@ -14,7 +14,7 @@
 				<div class="titulo__card font-bold text-4xl my-3 text-center">Whatsapp</div>
 				<div class="info__card leading-9">
 					<p class="text-center mb-6 font-bold text-principal/80">Nuestra linea oficial</p>
-					<p class="text-center opacity-60">Chatea con nosotros en cualquier comomento</p>
+					<p class="text-center opacity-60">Chatea con nosotros en cualquier momento</p>
 				</div>
 				<div class="card__buttons">
 					<a href="https://wa.link/8cz7dn" class="capitalize button__contact bg-principal text-white py-2 rounded-2xl w-fit px-4 mx-auto block">chatear ahora</a>
