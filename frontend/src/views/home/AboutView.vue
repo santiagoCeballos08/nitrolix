@@ -30,7 +30,7 @@
 					<h2 class="font-bold text-5xl uppercase">visión</h2>
 				</div>
 				<p class="informacion text-muted-foreground leading-relaxed text-base">
-					Ser líderes en la distribución de productos criogénicos en Antioquia y colombia, reconocidos por
+					Ser líderes en la distribución de productos criogénicos en Antioquia y Colombia, reconocidos por
 					nuestro
 					compromiso con la excelencia, la innovación y la atención
 					personalizada. Aspiramos a transformar la forma en que sectores especializados acceden y utilizan el
