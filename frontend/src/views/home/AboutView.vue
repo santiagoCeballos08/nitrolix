@@ -30,7 +30,8 @@
 					<h2 class="font-bold text-5xl uppercase">visión</h2>
 				</div>
 				<p class="informacion text-muted-foreground leading-relaxed text-base">
-					Ser líderes en la distribución de productos criogénicos en Antioquia, reconocidos por nuestro
+					Ser líderes en la distribución de productos criogénicos en Antioquia y colombia, reconocidos por
+					nuestro
 					compromiso con la excelencia, la innovación y la atención
 					personalizada. Aspiramos a transformar la forma en que sectores especializados acceden y utilizan el
 					nitrógeno líquido, creando una red sólida de confianza y
