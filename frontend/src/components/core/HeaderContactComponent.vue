@@ -11,25 +11,25 @@
 				</div>
 			</div>
 			<div class="informacion__redes flex justify-center mt-5 lg:mt-0 lg:pt-0 gap-x-3 lg:items-center">
-				<a
-					href="https://www.instagram.com/nitrolix_co?igsh=MW5oOGRwMTNmZXc1ag%3D%3D&utm_source=qr"
-					target="_blanc"
-					class="contenedor__redes red-ig p-2 redes flex justify-center"
+				<a href="https://www.instagram.com/nitrolix_co?igsh=MW5oOGRwMTNmZXc1ag%3D%3D&utm_source=qr"
+					target="_blanc" class="contenedor__redes red-ig p-2 redes flex justify-center"
 					aria-label="redes sociales de instagram">
 					<i class="fa-brands fa-instagram redes"></i>
 				</a>
-				<a
-					href="https://www.facebook.com/profile.php?id=61552800174349&mibextid=9R9pXO"
-					target="_blanc"
+				<a href="https://www.facebook.com/profile.php?id=61552800174349&mibextid=9R9pXO" target="_blanc"
 					class="contenedor__redes red-fb p-2 redes flex justify-center justify-items-center"
 					aria-label="redes sociales de facebook">
 					<i class="fa-brands fa-facebook redes"></i>
 				</a>
-				<a
-					href="https://wa.me/3026465782?text=Quiero mas informacion"
+				<a href="https://wa.me/3026465782?text=Quiero mas informacion"
 					class="contenedor__redes p-2 red-wpp redes flex justify-center"
 					aria-label="redes sociales de whatsapp">
 					<i class="fa-brands fa-whatsapp redes"></i>
+				</a>
+				<a href="https://www.tiktok.com/@nitrolix_co?_r=1&_t=ZS-95eH9aST6S9"
+					class="contenedor__redes p-2 red-tik redes flex justify-center"
+					aria-label="redes sociales de whatsapp">
+					<i class="fa-brands fa-tiktok redes"></i>
 				</a>
 			</div>
 		</div>

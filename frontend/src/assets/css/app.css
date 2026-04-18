@@ -12,6 +12,7 @@
 	--colorPrincipal3: #2d5f6c;
 	--colorBlanco: #f7f6f6;
 	--colorNegro: #1b1b1b;
+	--colorTiktok :#ff0050;
 	--colorTernario: #fabb5b;
 	--container-home: 140rem;
 
@@ -84,6 +85,12 @@ h4 {
 
 .red-wpp:hover {
 	background-color: var(--colorRedSocialWpp);
+	color: var(--colorBlanco);
+	border-color: var(--colorBlanco);
+}
+
+.red-tik:hover {
+	background-color: var(--colorTiktok);
 	color: var(--colorBlanco);
 	border-color: var(--colorBlanco);
 }

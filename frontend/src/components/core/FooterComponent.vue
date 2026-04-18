@@ -16,31 +16,41 @@
 			</div>
 			<div class="contenedor__contacto__footer">
 				<div class="contenedor__links__footer">
-					<p class="mb-4">Suscribete para conocer nuevas noticias</p>
+					<!-- <p class="mb-4">Suscribete para conocer nuevas noticias</p>
 					<div class="subs-cliente">
 						<input type="email" placeholder="ingresa el correo" class="text__subs bg-white" id="subsText" />
 						<button class="boton__subs">Suscribete</button>
-					</div>
+					</div> -->
 					<div class="redes__sociales mt-3">
-						<p class="font-bold text-center lg:text-start">Siguenos en</p>
+						<p class="font-bold text-center lg:text-start uppercase ">Siguenos en</p>
 						<div class="lista__redes__footer flex justify-center items-center lg:justify-start">
 							<ul class="flex gap-x-12">
 								<li>
-									<a
-										href="https://www.instagram.com/nitrolix_co?igsh=MW5oOGRwMTNmZXc1ag%3D%3D&utm_source=qr "
-										target="_blank"
-										aria-label="redes sociales de instagram">
-										<span class="icon__footer__redes"><i class="fa-brands fa-instagram redes"></i></span>
+									<a href="https://www.instagram.com/nitrolix_co?igsh=MW5oOGRwMTNmZXc1ag%3D%3D&utm_source=qr "
+										target="_blank" aria-label="redes sociales de instagram">
+										<span class="icon__footer__redes"><i
+												class="fa-brands fa-instagram redes"></i></span>
 									</a>
 								</li>
 								<li>
-									<a href="https://www.facebook.com/profile.php?id=61552800174349&mibextid=9R9pXO" target="_blank" aria-label="redes sociales de facebook">
-										<span class="icon__footer__redes"><i class="fa-brands fa-facebook redes"></i></span>
+									<a href="https://www.facebook.com/profile.php?id=61552800174349&mibextid=9R9pXO"
+										target="_blank" aria-label="redes sociales de facebook">
+										<span class="icon__footer__redes"><i
+												class="fa-brands fa-facebook redes"></i></span>
 									</a>
 								</li>
 								<li>
-									<a href="https://wa.me/3026465782?text=Quiero mas informacion" target="_blank" aria-label="redes sociales de whatsapp">
-										<span class="icon__footer__redes"><i class="fa-brands fa-whatsapp redes"></i></span>
+									<a href="https://wa.me/3026465782?text=Quiero mas informacion" target="_blank"
+										aria-label="redes sociales de whatsapp">
+										<span class="icon__footer__redes"><i
+												class="fa-brands fa-whatsapp redes"></i></span>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.tiktok.com/@nitrolix_co?_r=1&_t=ZS-95eH9aST6S9" target="_blank"
+										aria-label="redes sociales de whatsapp">
+										<span class="icon__footer__redes"><i
+												class="fa-brands fa-tiktok redes"></i></span>
 									</a>
 								</li>
 							</ul>
@@ -62,14 +72,14 @@
 </template>
 
 <script setup>
-	import { format } from '@formkit/tempo';
-	import { onMounted, ref } from 'vue';
+import { format } from '@formkit/tempo';
+import { onMounted, ref } from 'vue';
 
-	const year = ref(0);
-	const data = ref(new Date());
-	onMounted(() => {
-		year.value = format(data.value, 'YYYY', 'en');
-	});
+const year = ref(0);
+const data = ref(new Date());
+onMounted(() => {
+	year.value = format(data.value, 'YYYY', 'en');
+});
 </script>
 
 <style lang="scss" scoped></style>
